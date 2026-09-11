@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: If you use stochbench, please cite it as below. A publication describing the benchmark is in preparation.
+title: "stochbench: a benchmark set of stochastic models for testing fitting algorithms and simulators"
+type: dataset
+version: 0.1.0-dev
+date-released: 2026-09-11
+repository-code: https://github.com/wshlavacek/stochbench
+license: BSD-3-Clause
+authors:
+  - family-names: Hlavacek
+    given-names: William S.
+keywords:
+  - stochastic simulation
+  - rule-based modeling
+  - BioNetGen
+  - parameter estimation
+  - benchmark

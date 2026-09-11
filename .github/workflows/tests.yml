@@ -1,0 +1,23 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install
+        run: python -m pip install -e "src/python[test]"
+      - name: Check every problem directory and the scoring rules
+        run: python -m pytest tests -q
+      - name: The README overview table is current
+        run: |
+          python -m stochbench.overview
+          git diff --exit-code README.md

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stochbench"
+version = "0.1.0.dev0"
+description = "Problem definitions and scoring protocol of the stochbench collection"
+readme = "README.md"
+license = { text = "BSD-3-Clause" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest", "numpy"]
+
+[project.urls]
+Repository = "https://github.com/wshlavacek/stochbench"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["stochbench*"]
