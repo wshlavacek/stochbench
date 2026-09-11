@@ -1,6 +1,6 @@
 begin model
-#@model_id: s05_two_state_promoters_munsky2012
-#@title: Two-state gene expression noise (Munsky et al., 2012); benchmark problem s05
+#@model_id: Munsky_Science2012
+#@title: Two-state gene expression noise (Munsky et al., 2012)
 #@description: |
 #  Three independent promoters switch between transcriptionally inactive and
 #  active states with the same transcription and degradation rates but switching

@@ -1,6 +1,6 @@
 begin model
-#@model_id: s04_kinetic_proofreading_hlavacek2001
-#@title: Kinetic proofreading in receptor signaling (Hlavacek et al., 2001); benchmark problem s04
+#@model_id: Hlavacek_PNAS2001
+#@title: Kinetic proofreading in receptor signaling (Hlavacek et al., 2001)
 #@description: |
 #  A symmetric bivalent ligand crosslinks monovalent receptors into dimers,
 #  which undergo five sequential unidirectional modifications; a dimer that

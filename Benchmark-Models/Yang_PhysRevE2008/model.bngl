@@ -1,6 +1,6 @@
 begin model
-#@model_id: s06_tlbr_aggregation_yang2008
-#@title: Trivalent-ligand bivalent-receptor aggregation (Yang et al., 2008); benchmark problem s06
+#@model_id: Yang_PhysRevE2008
+#@title: Trivalent-ligand bivalent-receptor aggregation (Yang et al., 2008)
 #@description: |
 #  A trivalent ligand crosslinks bivalent cell-surface receptors through ligand
 #  capture, crosslinking to a receptor on a different complex, and bond

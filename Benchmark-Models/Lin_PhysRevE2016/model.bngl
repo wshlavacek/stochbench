@@ -1,6 +1,6 @@
 begin model
-#@model_id: s02_bursty_autoregulation_lin2016
-#@title: Bursty positively autoregulated gene expression (Lin and Doering, 2016); benchmark problem s02
+#@model_id: Lin_PhysRevE2016
+#@title: Bursty positively autoregulated gene expression (Lin and Doering, 2016)
 #@description: |
 #  A gene transcribed at a basal rate plus a Hill-activated rate that depends on
 #  its own protein, with fast transcript turnover and slow protein dilution, so

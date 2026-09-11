@@ -1,5 +1,5 @@
 {
-  "id": "s02_bursty_autoregulation_lin2016",
+  "id": "Lin_PhysRevE2016",
   "version": 1,
   "title": "Bursty positively autoregulated gene expression (Lin and Doering, 2016)",
   "reference": "Lin YT, Doering CR (2016). Gene expression dynamics with stochastic bursts: Construction and exact results for a coarse-grained model. Phys Rev E 93:022409. doi:10.1103/PhysRevE.93.022409",

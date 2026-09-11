@@ -20,12 +20,12 @@ The protocol (what a problem is, how the data are made, how a fit is scored) is 
 <!-- START OVERVIEW TABLE -->
 | Problem ID | Free parameters | Method | Observables | Sampling times | Data replicates | Budget (simulations) | References |
 |:---|---:|:---|---:|---:|---:|---:|:---|
-| [s01_three_stage_gene_expression_shahrezaei2008](Benchmark-Models/s01_three_stage_gene_expression_shahrezaei2008/) | 4 | ssa | 3 | 61 | 200 | 20000 | [\[1\]](https://doi.org/10.1073/pnas.0803850105) |
-| [s02_bursty_autoregulation_lin2016](Benchmark-Models/s02_bursty_autoregulation_lin2016/) | 4 | ssa | 2 | 73 | 200 | 20000 | [\[1\]](https://doi.org/10.1103/PhysRevE.93.022409) |
-| [s03_predator_prey_mckane2005](Benchmark-Models/s03_predator_prey_mckane2005/) | 4 | ssa | 2 | 81 | 200 | 20000 | [\[1\]](https://doi.org/10.1103/PhysRevLett.94.218102) |
-| [s04_kinetic_proofreading_hlavacek2001](Benchmark-Models/s04_kinetic_proofreading_hlavacek2001/) | 4 | ssa | 3 | 61 | 200 | 20000 | [\[1\]](https://doi.org/10.1073/pnas.121172298) [\[2\]](https://doi.org/10.1006/bulm.2002.0306) |
-| [s05_two_state_promoters_munsky2012](Benchmark-Models/s05_two_state_promoters_munsky2012/) | 6 | ssa | 6 | 301 | 200 | 20000 | [\[1\]](https://doi.org/10.1126/science.1216379) |
-| [s06_tlbr_aggregation_yang2008](Benchmark-Models/s06_tlbr_aggregation_yang2008/) | 3 | nf | 3 | 61 | 100 | 4000 | [\[1\]](https://doi.org/10.1103/PhysRevE.78.031910) |
+| [Hlavacek_PNAS2001](Benchmark-Models/Hlavacek_PNAS2001/) | 4 | ssa | 3 | 61 | 200 | 20000 | [\[1\]](https://doi.org/10.1073/pnas.121172298) [\[2\]](https://doi.org/10.1006/bulm.2002.0306) |
+| [Lin_PhysRevE2016](Benchmark-Models/Lin_PhysRevE2016/) | 4 | ssa | 2 | 73 | 200 | 20000 | [\[1\]](https://doi.org/10.1103/PhysRevE.93.022409) |
+| [McKane_PhysRevLett2005](Benchmark-Models/McKane_PhysRevLett2005/) | 4 | ssa | 2 | 81 | 200 | 20000 | [\[1\]](https://doi.org/10.1103/PhysRevLett.94.218102) |
+| [Munsky_Science2012](Benchmark-Models/Munsky_Science2012/) | 6 | ssa | 6 | 301 | 200 | 20000 | [\[1\]](https://doi.org/10.1126/science.1216379) |
+| [Shahrezaei_PNAS2008](Benchmark-Models/Shahrezaei_PNAS2008/) | 4 | ssa | 3 | 61 | 200 | 20000 | [\[1\]](https://doi.org/10.1073/pnas.0803850105) |
+| [Yang_PhysRevE2008](Benchmark-Models/Yang_PhysRevE2008/) | 3 | nf | 3 | 61 | 100 | 4000 | [\[1\]](https://doi.org/10.1103/PhysRevE.78.031910) |
 <!-- END OVERVIEW TABLE -->
 
 The overview table is generated from the problem definitions by

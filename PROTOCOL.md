@@ -94,37 +94,38 @@ evaluations at the truth, `fit.smoothing` replicates each, chi-square against th
 
 | problem | parameter | halved | doubled |
 |---|---|---:|---:|
-| s01 | `k0` | 2 | 0 |
-| s01 | `k1` | 2 | 1 |
-| s01 | `v0` | 1 | 16 |
-| s01 | `v1` | 1 | 10 |
-| s02 | `B` | 8 | 97 |
-| s02 | `r0` | 1 | 31 |
-| s02 | `r1` | 0 | 17 |
-| s02 | `K` | 13 | 4 |
-| s03 | `b` | 501 | 860 |
-| s03 | `d1` | 471 | 1586 |
-| s03 | `p1` | 1429 | 649 |
-| s03 | `p2` | 10 | 31 |
-| s04 | `kon1` | 937 | 1466 |
-| s04 | `kon2` | 980 | 1425 |
-| s04 | `koff` | 10806 | 2795 |
-| s04 | `kp` | 270 | 1015 |
-| s05 | `k_on_I` | 5 | 7 |
-| s05 | `k_off_I` | 7 | 1 |
-| s05 | `k_on_II` | 4 | 6 |
-| s05 | `k_off_II` | 3 | 1 |
-| s05 | `k_on_III` | 5 | 12 |
-| s05 | `k_off_III` | 13 | 6 |
-| s06 | `koff` | 1017 | 1142 |
-| s06 | `kon1` | 919 | 815 |
-| s06 | `kon2` | 20 | 49 |
+| Shahrezaei_PNAS2008 | `k0` | 2 | 0 |
+| Shahrezaei_PNAS2008 | `k1` | 2 | 1 |
+| Shahrezaei_PNAS2008 | `v0` | 1 | 16 |
+| Shahrezaei_PNAS2008 | `v1` | 1 | 10 |
+| Lin_PhysRevE2016 | `B` | 8 | 97 |
+| Lin_PhysRevE2016 | `r0` | 1 | 31 |
+| Lin_PhysRevE2016 | `r1` | 0 | 17 |
+| Lin_PhysRevE2016 | `K` | 13 | 4 |
+| McKane_PhysRevLett2005 | `b` | 501 | 860 |
+| McKane_PhysRevLett2005 | `d1` | 471 | 1586 |
+| McKane_PhysRevLett2005 | `p1` | 1429 | 649 |
+| McKane_PhysRevLett2005 | `p2` | 10 | 31 |
+| Hlavacek_PNAS2001 | `kon1` | 937 | 1466 |
+| Hlavacek_PNAS2001 | `kon2` | 980 | 1425 |
+| Hlavacek_PNAS2001 | `koff` | 10806 | 2795 |
+| Hlavacek_PNAS2001 | `kp` | 270 | 1015 |
+| Munsky_Science2012 | `k_on_I` | 5 | 7 |
+| Munsky_Science2012 | `k_off_I` | 7 | 1 |
+| Munsky_Science2012 | `k_on_II` | 4 | 6 |
+| Munsky_Science2012 | `k_off_II` | 3 | 1 |
+| Munsky_Science2012 | `k_on_III` | 5 | 12 |
+| Munsky_Science2012 | `k_off_III` | 13 | 6 |
+| Yang_PhysRevE2008 | `koff` | 1017 | 1142 |
+| Yang_PhysRevE2008 | `kon1` | 919 | 815 |
+| Yang_PhysRevE2008 | `kon2` | 20 | 49 |
 
-Parameters whose leverage is ten to fifty where their siblings' is a thousand (`p2` in s03,
-`kon2` in s06) are narrow directions of a steep landscape; parameters whose leverage is low
-in one direction (the slow promoter and transcription rates of s01, s02, s05) change a
-replicate mean by less than the noise in ten replicates when halved. Both are what a method
-has to cope with, and the first baseline shows they are where methods fail.
+Parameters whose leverage is ten to fifty where their siblings' is a thousand (`p2` in
+McKane_PhysRevLett2005, `kon2` in Yang_PhysRevE2008) are narrow directions of a steep
+landscape; parameters whose leverage is low in one direction (the slow promoter and
+transcription rates of Shahrezaei_PNAS2008, Lin_PhysRevE2016 and Munsky_Science2012) change
+a replicate mean by less than the noise in ten replicates when halved. Both are what a
+method has to cope with, and the first baseline shows they are where methods fail.
 
 ## Reference fits
 

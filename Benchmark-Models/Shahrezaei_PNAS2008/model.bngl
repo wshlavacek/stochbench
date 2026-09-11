@@ -1,6 +1,6 @@
 begin model
-#@model_id: s01_three_stage_gene_expression_shahrezaei2008
-#@title: Three-stage stochastic gene expression (Shahrezaei and Swain, 2008); benchmark problem s01
+#@model_id: Shahrezaei_PNAS2008
+#@title: Three-stage stochastic gene expression (Shahrezaei and Swain, 2008)
 #@description: |
 #  A gene whose promoter switches between an inactive and an active state,
 #  transcription from the active state, translation, and first-order mRNA and

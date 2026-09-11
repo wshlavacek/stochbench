@@ -1,6 +1,6 @@
 begin model
-#@model_id: s03_predator_prey_mckane2005
-#@title: Demographic-noise predator-prey cycles (McKane and Newman, 2005); benchmark problem s03
+#@model_id: McKane_PhysRevLett2005
+#@title: Demographic-noise predator-prey cycles (McKane and Newman, 2005)
 #@description: |
 #  An individual-level predator-prey model on N sites with prey birth into
 #  empty sites, predator death, and two predation outcomes. The mean-field
