@@ -1,0 +1,75 @@
+{
+  "id": "Artyomov_PNAS2010",
+  "version": 1,
+  "title": "Coreceptor-assisted Lck delivery to the TCR (Artyomov et al., 2010)",
+  "reference": "Artyomov MN, Lis M, Devadas S, Davis MM, Chakraborty AK (2010). CD4 and CD8 binding to MHC molecules primarily acts to enhance Lck delivery. Proc Natl Acad Sci USA 107:16916-16921. doi:10.1073/pnas.1010568107",
+  "source": "BNGL-Models/models/lck_delivery_wellmixed_artyomov2010 (rev f29cc7c)",
+  "model": "model.bngl",
+  "simulation": {
+    "method": "ssa",
+    "suffix": "ssa",
+    "t_start": 0,
+    "t_end": 250,
+    "n_steps": 250
+  },
+  "observables": [
+    "AgMHC_on_TCR",
+    "Ring",
+    "CD4_free"
+  ],
+  "parameters": {
+    "koffAg__FREE": {
+      "true": 0.02,
+      "low": 0.0002,
+      "high": 2.0,
+      "identifiable": true,
+      "note": "TCR-pMHC dissociation for agonist peptide, /s; the parameter the paper varies to separate affinity from Lck delivery"
+    },
+    "konCD_local__FREE": {
+      "true": 1000.0,
+      "low": 10.0,
+      "high": 100000.0,
+      "identifiable": true,
+      "note": "pMHC-coreceptor association, /s per chamber"
+    },
+    "koffCD__FREE": {
+      "true": 20.0,
+      "low": 0.2,
+      "high": 2000.0,
+      "identifiable": true,
+      "note": "pMHC-coreceptor dissociation, /s; the x axis of the paper's Fig. 2A"
+    },
+    "konLck_local__FREE": {
+      "true": 1.0,
+      "low": 0.01,
+      "high": 100.0,
+      "identifiable": true,
+      "note": "coreceptor-TCR association with MHC involved, /s per chamber"
+    },
+    "konLck1_local__FREE": {
+      "true": 1.0,
+      "low": 0.01,
+      "high": 100.0,
+      "identifiable": true,
+      "note": "coreceptor-TCR association with no MHC involved, /s per chamber; the weakest direction here, since against koffLck of 1 /s this path holds only about two of the hundred coreceptors at equilibrium"
+    },
+    "koffLck__FREE": {
+      "true": 1.0,
+      "low": 0.01,
+      "high": 100.0,
+      "identifiable": true,
+      "note": "coreceptor-TCR dissociation, /s; with the association rates it sets how long Lck is held at an engaged receptor"
+    }
+  },
+  "data": {
+    "file": "ssa.exp",
+    "replicates": 200,
+    "seed_offset": 1000000,
+    "sd_floor_fraction": 0.05
+  },
+  "fit": {
+    "budget_simulations": 20000,
+    "smoothing": 10
+  },
+  "notes": "Six free parameters at almost no cost per trajectory: seventeen species, and a fit spends well under a minute, which makes this the collection's cheapest problem and a reasonable place to check that a new method works at all. The difficulty is in the structure rather than the size. The three bonds close a ring, and each has both an across-complexes rule and a ring-closing rule at a higher per-chamber rate, so an association constant acts through two different paths, and the two coreceptor-TCR on rates are separated only by which path a trajectory took. Counts are small -- ten agonist pMHC, a hundred coreceptors, a ring population peaking near one molecule -- so the observables are genuinely noisy even though every parameter is identifiable."
+}
