@@ -68,7 +68,7 @@ FORMAT_VERSION = 1
 #: A literal rather than the installed distribution's metadata, so a checkout and an
 #: install of that checkout never disagree; ``tests/test_problems.py`` holds it equal to
 #: the version in ``src/python/pyproject.toml`` and ``CITATION.cff``.
-COLLECTION_VERSION = '0.2.0'
+COLLECTION_VERSION = '0.2.0.dev0'
 
 #: Success tolerances in decades of log10 parameter error.
 TOL_LOOSE = math.log10(2.0)   # within a factor of two

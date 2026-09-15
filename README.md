@@ -85,10 +85,12 @@ Three free parameters are marked not identifiable, measured rather than assumed,
 is also tested on whether it wastes budget on a direction carrying no information. The plan is
 twenty to thirty problems and reference results from several tools.
 
-What a version means is in [PROTOCOL.md](PROTOCOL.md#versioning): problem ids are permanent,
-a problem never changes in place, adding problems is a minor version, and changing a scoring
-rule is a major one. Every fit record names the collection version it was scored against.
-[docs/RELEASING.md](docs/RELEASING.md) is the release checklist.
+Nothing is released yet, and the version carries `.dev` to say so. The rule for what a
+version *means* is in [PROTOCOL.md](PROTOCOL.md#versioning) and is in force regardless:
+problem ids are permanent, a problem never changes in place, adding problems is a minor
+version, changing a scoring rule is a major one, and every fit record names the collection
+version it was scored against. That is what makes a result from today comparable later; it
+needs no release to work.
 
 ## License
 
@@ -99,10 +101,7 @@ publication it implements, to which different terms may apply.
 
 ## How to cite
 
-A publication describing the collection is in preparation. Until then, cite the released
-version you used (see [CITATION.cff](CITATION.cff)), and say which one: a result is only
-comparable with another scored against the same version.
-
-Releases are archived on Zenodo, which issues a DOI for each one and a concept DOI resolving
-to the newest. Both go here and in `CITATION.cff` once the first release is deposited; see
-[docs/RELEASING.md](docs/RELEASING.md).
+There is no release to cite yet. Cite the repository and the commit you used (see
+[CITATION.cff](CITATION.cff)), and say which: a result is only comparable with another scored
+against the same state of the collection, which is why every fit record carries a
+`collection_version`. A publication describing the collection is in preparation.
