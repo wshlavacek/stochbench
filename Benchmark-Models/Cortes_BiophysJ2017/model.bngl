@@ -1,0 +1,196 @@
+begin model
+#@model_id: Cortes_BiophysJ2017
+#@title: Phage lambda lysis-lysogeny decision circuit (Cortes et al., 2017)
+#@description: |
+#  The phage lambda decision circuit as a stochastic model with a replicating
+#  genome population and a growing host cell. Four promoters compete for each
+#  viral genome: pR fires the cro-cII-Q operon, pRM and pRE both make CI mRNA,
+#  and CII-activated paQ makes an anti-Q small RNA that co-degrades Q mRNA. Every
+#  transcription rate is a functional rate law -- a Hill expression in the
+#  dimer concentration of CI, Cro or CII, each protein count divided by a
+#  volume-proxy observable that grows exponentially through a self-catalytic
+#  clock rule -- and CII degradation is an FtsH-saturable function of its own
+#  concentration. Genome replication is likewise a function of promoter
+#  occupancy, so the template population is itself part of the feedback.
+#@reference: |
+#  Cortes MG, Trinh JT, Zeng L, Balazsi G (2017). Late-arriving signals
+#  contribute less to cell-fate decisions. Biophysical Journal 113:2110-2120.
+#  doi:10.1016/j.bpj.2017.09.012
+#@source: BNGL-Models/models/lambda_switch_cortes2017 (rev f29cc7c)
+#
+# Benchmark adaptations (see problem.json): six rate constants are free via the
+# ``name name__FREE`` alias form -- the pR and pRE transcription rates, the shared
+# translation rate, CI degradation, the FtsH-saturable CII degradation scale, and
+# the theta-mode replication rate from free pR. The promoter occupancy constants
+# and the remaining turnover rates stay at their published Table S2 and S3 values.
+# Five of the eight observables are kept: the four decision proteins and the
+# genome count. The volume clock is dropped as an observable, being effectively
+# deterministic by construction, and the two transcript counts are dropped
+# because they sit at zero or one. The published single-cell protocol is a 60 min
+# time course at MOI 1 from an average-size cell; it is kept, resampled every
+# 30 s. Simulated network-free: the network is finite, but NFsim is what
+# evaluates the eight functional rate laws per event, which is the point of
+# including this problem.
+
+begin parameters
+  # Population-conversion constants, used for the [X] mapping in the rate laws
+  NA      6.02214076e23  # /mol
+  V_ref   1.5e-15        # L/cell   average E. coli volume
+
+  # Infection and cell-size inputs
+  MOI     1              # molecules    initial viral genome copies
+  v0      1.0            # dimensionless  rescaled initial cell volume
+
+  # Volume-proxy clock: Obs_Vol = v*Vscale, capped at rescaled volume v = 2.
+  # Vscale is large so the birth-process clock is effectively deterministic.
+  Vscale   1000       # molecules per unit rescaled volume
+  VolCap   2*Vscale   # clock ceiling
+  t_double 100        # min      doubling time
+  g        0.0069314718  # /min   ln(2)/t_double
+
+  # Transcription rate constants; Table S2
+  k_R     k_R__FREE   # /min  rightwards transcription from pR (cro-cII-Q)
+  k_RM    0.2848      # /min  pRM, CI maintenance
+  k_RE    k_RE__FREE  # /min  pRE, CI establishment, CII-activated
+  k_a     0.4386      # /min  activated paQ, anti-Q sRNA
+
+  # Translation and RNA turnover; Table S2
+  sigma   sigma__FREE  # /min     per transcript, all four proteins
+  d_r     0.2476       # /min
+  alpha_r 0.1544       # /nM/min  anti-Q : Q-mRNA duplex formation
+
+  # Protein turnover; Table S2
+  d_CI    d_CI__FREE  # /min
+  d_Cro   0.002       # /min
+  d_Q     0.00258     # /min
+
+  # CII degradation is FtsH-saturable: deg_CII = alpha_yf/(1 + kappa_FtsH*[CII])
+  alpha_yf   alpha_yf__FREE  # /min
+  kappa_FtsH 1/5.0396        # /nM
+
+  # Viral DNA replication, theta-mode, from free and from Cro-bound pR; Table S2
+  omega     omega__FREE  # /min
+  omega_Cro 0.021        # /min
+
+  # Promoter occupancy constants, single-site dimer (Hill n = 2); Table S3.
+  # Each is 1/K^2 for the tabulated dissociation constant K, written as a
+  # product rather than with ^ so that a fitting tool's own expression
+  # evaluator, which need not read ^ as exponentiation, gets the same number.
+  kappa_CI  1/(5.84*5.84)    # /nM^2  pRM/pR competitive occupancy by CI2
+  kappa_Cro 1/(30.37*30.37)  # /nM^2  and by Cro2
+  kappa_pRE 1/(72.54*72.54)  # /nM^2  pRE activation by CII2
+  kappa_paQ 1/(20.78*20.78)  # /nM^2  paQ activation by CII2
+end parameters
+
+begin molecule types
+  # Viral genome copy: the shared template for all promoters and the unit of
+  # theta-mode replication
+  DNA()
+  # Decision proteins; monomers, with multimerization at quasi-steady state
+  CI()
+  Cro()
+  CII()
+  Q()
+  # Transcripts; mRNA_antiQ is the paQ anti-Q small RNA
+  mRNA_CI()
+  mRNA_Cro()
+  mRNA_CII()
+  mRNA_Q()
+  mRNA_antiQ()
+  # Volume-proxy clock particle; count/Vscale is the rescaled cell volume
+  Vol()
+end molecule types
+
+begin seed species
+  DNA()         MOI        # molecules
+  CI()          0          # molecules
+  Cro()         0          # molecules
+  CII()         0          # molecules
+  Q()           0          # molecules
+  mRNA_CI()     0          # molecules
+  mRNA_Cro()    0          # molecules
+  mRNA_CII()    0          # molecules
+  mRNA_Q()      0          # molecules
+  mRNA_antiQ()  0          # molecules
+  Vol()         v0*Vscale  # molecules
+end seed species
+
+begin observables
+  Molecules Obs_CI   CI()
+  Molecules Obs_Cro  Cro()
+  Molecules Obs_CII  CII()
+  Molecules Obs_Q    Q()
+  Molecules Obs_DNA  DNA()
+  Molecules Obs_Vol  Vol()
+end observables
+
+begin functions
+  # Promoter occupancies, each a Hill expression in a dimer concentration,
+  # the concentration being a protein count scaled by the live volume proxy
+  rate_pR() = k_R/(1 + kappa_CI*(Obs_CI*Vscale/Obs_Vol)^2 + \
+    kappa_Cro*(Obs_Cro*Vscale/Obs_Vol)^2)
+  rate_pRM() = k_RM*kappa_CI*(Obs_CI*Vscale/Obs_Vol)^2/(1 + \
+    kappa_CI*(Obs_CI*Vscale/Obs_Vol)^2 + kappa_Cro*(Obs_Cro*Vscale/Obs_Vol)^2)
+  rate_pRE() = k_RE*kappa_pRE*(Obs_CII*Vscale/Obs_Vol)^2/(1 + \
+    kappa_pRE*(Obs_CII*Vscale/Obs_Vol)^2)
+  rate_paQ() = k_a*kappa_paQ*(Obs_CII*Vscale/Obs_Vol)^2/(1 + \
+    kappa_paQ*(Obs_CII*Vscale/Obs_Vol)^2)
+
+  # Anti-Q : Q-mRNA duplex formation, a concentration-scaled second-order rate
+  rate_antiQ() = alpha_r*Vscale/Obs_Vol
+
+  # FtsH-saturable CII degradation
+  deg_CII() = alpha_yf/(1 + kappa_FtsH*Obs_CII*Vscale/Obs_Vol)
+
+  # Theta-mode replication from free and from Cro-bound pR
+  rate_repl() = (omega + omega_Cro*kappa_Cro*(Obs_Cro*Vscale/Obs_Vol)^2)/(1 + \
+    kappa_CI*(Obs_CI*Vscale/Obs_Vol)^2 + kappa_Cro*(Obs_Cro*Vscale/Obs_Vol)^2)
+
+  # Exponential volume growth, gated off at the cap
+  grow() = g*(Obs_Vol<VolCap)
+end functions
+
+begin reaction rules
+  # Transcription; every viral genome is a template and every rate is a function
+  R_txn_pR:  DNA() -> DNA() + mRNA_Cro() + mRNA_CII() + mRNA_Q()  rate_pR()
+  R_txn_pRE: DNA() -> DNA() + mRNA_CI()  rate_pRE()
+  R_txn_pRM: DNA() -> DNA() + mRNA_CI()  rate_pRM()
+  R_txn_paQ: DNA() -> DNA() + mRNA_antiQ()  rate_paQ()
+
+  # Translation, per transcript
+  R_tl_CI:  mRNA_CI()  -> mRNA_CI()  + CI()   sigma
+  R_tl_Cro: mRNA_Cro() -> mRNA_Cro() + Cro()  sigma
+  R_tl_CII: mRNA_CII() -> mRNA_CII() + CII()  sigma
+  R_tl_Q:   mRNA_Q()   -> mRNA_Q()   + Q()    sigma
+
+  # RNA interference: anti-Q sequesters and co-degrades Q mRNA
+  R_antiQ: mRNA_Q() + mRNA_antiQ() -> 0  rate_antiQ() DeleteMolecules
+
+  # Protein turnover; CII through the FtsH-saturable functional rate
+  R_deg_CI:  CI()  -> 0  d_CI
+  R_deg_Cro: Cro() -> 0  d_Cro
+  R_deg_CII: CII() -> 0  deg_CII()
+  R_deg_Q:   Q()   -> 0  d_Q
+
+  # RNA turnover; the anti-Q RNA has no first-order decay
+  R_deg_mRNA_CI:  mRNA_CI()  -> 0  d_r
+  R_deg_mRNA_Cro: mRNA_Cro() -> 0  d_r
+  R_deg_mRNA_CII: mRNA_CII() -> 0  d_r
+  R_deg_mRNA_Q:   mRNA_Q()   -> 0  d_r
+
+  # Viral DNA replication, growing the template population
+  R_repl: DNA() -> DNA() + DNA()  rate_repl()
+
+  # Cell-volume growth clock: self-catalytic, exponential, capped at v = 2
+  R_grow: Vol() -> Vol() + Vol()  grow()
+end reaction rules
+end model
+
+begin actions
+  # gml caps the particle count. At the true parameters a trajectory holds about
+  # 2,300 particles, but genome replication is self-limiting only through CI and
+  # Cro repression, so a candidate with little protein and fast replication grows
+  # the template population without bound; the cap turns that into a failed
+  # simulation, which a fit scores as such, instead of an unbounded one.
+  simulate({method=>"nf",suffix=>"nfr",t_start=>0,t_end=>60,n_steps=>120,gml=>200000})
+end actions

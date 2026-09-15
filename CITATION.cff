@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: If you use stochbench, please cite it as below. A publication describing the benchmark is in preparation.
 title: "stochbench: a benchmark set of stochastic models for testing fitting algorithms and simulators"
 type: dataset
-version: 0.1.0
+version: 0.2.0
 date-released: 2026-09-15
 repository-code: https://github.com/wshlavacek/stochbench
 license: BSD-3-Clause

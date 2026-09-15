@@ -1,0 +1,85 @@
+begin model
+#@model_id: Dembo_JImmunol1978
+#@title: Bivalent ligand crosslinking bivalent receptors (Dembo and Goldstein, 1978)
+#@description: |
+#  A symmetric bivalent hapten crosslinks bivalent cell-surface antibody into
+#  linear chains: a free ligand arm binds a free receptor site, a ligand already
+#  tethered by one arm binds a free site on a different complex, and any bond
+#  dissociates. Because both species are bivalent the aggregates are chains, not
+#  the branched trees a trivalent ligand makes, and at the published crosslinking
+#  strength the chains grow long enough that the reaction network is unbounded
+#  and the model must be simulated network-free.
+#@reference: |
+#  Dembo M, Goldstein B (1978). Theory of equilibrium binding of symmetric
+#  bivalent haptens to cell surface antibody: application to histamine release
+#  from basophils. Journal of Immunology 121:345-353.
+#  doi:10.4049/jimmunol.121.1.345
+#@source: BNGL-Models/models/blbr_dembo1978 (rev f29cc7c)
+#
+# Benchmark adaptations (see problem.json): the three stochastic rate constants
+# are free via the ``name name__FREE`` alias form, written directly rather than
+# derived from the published macroscopic constants, so that each is one search
+# dimension; their true values are the published ones evaluated in the simulated
+# subvolume (kf = kon/(NA*V_sim) with kon = 1e6 /M/s, kxf = KxRT/RT*koff with
+# KxRT = 5). The ligand and receptor counts are fixed at the published values
+# scaled to one percent of a cell, 30,000 ligands and 3,000 receptors. Four of
+# the five observables are kept; free ligand sites are dropped, being a linear
+# combination of the total and the bonds. The window is 500 s from all-free
+# initial conditions, past the roughly 300 s equilibration time, sampled every
+# 10 s.
+
+begin parameters
+  # Molecule counts in the simulated subvolume (one percent of a cell)
+  RT  3000   # molecules
+  LT  30000  # molecules
+
+  # Bond dissociation, common to both bond types
+  koff  koff__FREE  # /s
+
+  # Capture of a free ligand arm by a free receptor site
+  kf  kf__FREE  # /(molecule*s)
+
+  # Crosslinking: a tethered ligand's second arm binding a free receptor site
+  kxf  kxf__FREE  # /(molecule*s)
+end parameters
+
+begin molecule types
+  # Bivalent ligand: two identical receptor-binding sites
+  L(r,r)
+  # Bivalent receptor: two identical ligand-binding sites
+  R(l,l)
+end molecule types
+
+begin seed species
+  L(r,r)  LT  # molecules
+  R(l,l)  RT  # molecules
+end seed species
+
+begin observables
+  # Free ligand, both arms unbound, and free receptor, both sites unbound
+  Species    Obs_Free_L  L(r,r)
+  Species    Obs_Free_R  R(l,l)
+  # Total ligand-receptor bonds
+  Molecules  Obs_Bonds   L(r!1).R(l!1)
+  # Free receptor sites on any receptor
+  Molecules  Obs_Free_R_sites  R(l)
+end observables
+
+begin reaction rules
+  # Capture: a free ligand binds a free receptor site
+  R_capture: L(r,r) + R(l) -> L(r!1,r).R(l!1)  kf
+
+  # Crosslinking: a receptor-bound ligand binds a free receptor site on a
+  # different complex. The "+" enforces inter-complex binding, and NFsim's
+  # same-complex blocking keeps chains from closing into rings, which is the
+  # published model's assumption.
+  R_crosslink: L(r!+,r) + R(l) -> L(r!+,r!1).R(l!1)  kxf
+
+  # Dissociation of any ligand-receptor bond
+  R_dissoc: L(r!1).R(l!1) -> L(r) + R(l)  koff
+end reaction rules
+end model
+
+begin actions
+  simulate({method=>"nf",suffix=>"nfr",t_start=>0,t_end=>500,n_steps=>50})
+end actions

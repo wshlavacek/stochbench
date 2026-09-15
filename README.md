@@ -20,16 +20,22 @@ The protocol (what a problem is, how the data are made, how a fit is scored) is 
 <!-- START OVERVIEW TABLE -->
 | Problem ID | Free parameters | Method | Observables | Sampling times | Data replicates | Budget (simulations) | References |
 |:---|---:|:---|---:|---:|---:|---:|:---|
+| [Cortes_BiophysJ2017](Benchmark-Models/Cortes_BiophysJ2017/) | 6 | nf | 5 | 121 | 200 | 20000 | [\[1\]](https://doi.org/10.1016/j.bpj.2017.09.012) |
+| [Dembo_JImmunol1978](Benchmark-Models/Dembo_JImmunol1978/) | 3 | nf | 4 | 51 | 100 | 4000 | [\[1\]](https://doi.org/10.4049/jimmunol.121.1.345) |
+| [Faeder_JImmunol2003](Benchmark-Models/Faeder_JImmunol2003/) | 6 | ssa | 6 | 61 | 200 | 4000 | [\[1\]](https://doi.org/10.4049/jimmunol.170.7.3769) |
 | [Hlavacek_PNAS2001](Benchmark-Models/Hlavacek_PNAS2001/) | 4 | ssa | 3 | 61 | 200 | 20000 | [\[1\]](https://doi.org/10.1073/pnas.121172298) [\[2\]](https://doi.org/10.1006/bulm.2002.0306) |
 | [Lin_PhysRevE2016](Benchmark-Models/Lin_PhysRevE2016/) | 4 | ssa | 2 | 73 | 200 | 20000 | [\[1\]](https://doi.org/10.1103/PhysRevE.93.022409) |
 | [McKane_PhysRevLett2005](Benchmark-Models/McKane_PhysRevLett2005/) | 4 | ssa | 2 | 81 | 200 | 20000 | [\[1\]](https://doi.org/10.1103/PhysRevLett.94.218102) |
 | [Munsky_Science2012](Benchmark-Models/Munsky_Science2012/) | 6 | ssa | 6 | 301 | 200 | 20000 | [\[1\]](https://doi.org/10.1126/science.1216379) |
+| [Rubenstein_BiophysChem2007](Benchmark-Models/Rubenstein_BiophysChem2007/) | 5 | ssa | 3 | 101 | 200 | 2000 | [\[1\]](https://doi.org/10.1016/j.bpc.2006.09.011) |
+| [Samoilov_PNAS2005](Benchmark-Models/Samoilov_PNAS2005/) | 8 | ssa | 6 | 251 | 200 | 20000 | [\[1\]](https://doi.org/10.1073/pnas.0406841102) |
 | [Shahrezaei_PNAS2008](Benchmark-Models/Shahrezaei_PNAS2008/) | 4 | ssa | 3 | 61 | 200 | 20000 | [\[1\]](https://doi.org/10.1073/pnas.0803850105) |
+| [Vilar_PNAS2002](Benchmark-Models/Vilar_PNAS2002/) | 4 | ssa | 3 | 101 | 200 | 20000 | [\[1\]](https://doi.org/10.1073/pnas.092133899) |
 | [Yang_PhysRevE2008](Benchmark-Models/Yang_PhysRevE2008/) | 3 | nf | 3 | 61 | 100 | 4000 | [\[1\]](https://doi.org/10.1103/PhysRevE.78.031910) |
 <!-- END OVERVIEW TABLE -->
 
 The overview table is generated from the problem definitions by
-`python src/python/stochbench/overview.py`.
+`python -m stochbench.overview`.
 
 Every model comes from the curated
 [BNGL-Models](https://github.com/wshlavacek/BNGL-Models) collection, where each carries its

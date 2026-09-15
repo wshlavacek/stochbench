@@ -1,0 +1,124 @@
+begin model
+#@model_id: Samoilov_PNAS2005
+#@title: Noise-induced bistability in an enzymatic futile cycle (Samoilov et al., 2005)
+#@description: |
+#  An elementary-reaction enzymatic futile cycle driven by an external chemical
+#  noise generator. A substrate S is interconverted between an unmodified state X
+#  and a modified state X* by two competing enzymes, each binding reversibly and
+#  then catalysing, so all six cycle steps are mass action with explicit
+#  enzyme-substrate complexes and no Michaelis-Menten approximation. The noise
+#  driver interconverts a species N with the free forward enzyme through one
+#  quadratic and one linear step, injecting approximately multiplicative
+#  fluctuations. Deterministically the whole system is monostable; with discrete
+#  molecule counts the same reaction set switches between a high and a low state,
+#  which raises the time average of X* about 50 percent above the deterministic
+#  steady state. There is no feedback loop anywhere in the mechanism.
+#@reference: |
+#  Samoilov M, Plyasunov S, Arkin AP (2005). Stochastic amplification and
+#  signaling in enzymatic futile cycles through noise-induced bistability with
+#  oscillations. Proceedings of the National Academy of Sciences USA
+#  102:2310-2315. doi:10.1073/pnas.0406841102
+#@source: BNGL-Models/models/noise_induced_bistable_futile_cycle_samoilov2005 (rev f29cc7c)
+#
+# Benchmark adaptations (see problem.json): eight rate constants are free via the
+# ``name name__FREE`` alias form -- the six cycle constants and the two forward
+# constants of the noise driver. The driver's two reverse constants k_minus_21 and
+# k_minus_22 stay at their published values: together with k_21 and k_22 they only
+# set where the driver's stationary distribution sits, so freeing all four would
+# add two directions the data see mainly through their ratios. Six of the eight
+# observables are kept; the two free-enzyme counts are dropped because the total
+# forward enzyme is kept instead and the reverse enzyme is conserved. The window
+# is the first 0.5 s of the published 10 s protocol, sampled every 2 ms: the
+# substrate relaxes from its published initial state within about 0.25 s, so half
+# the grid resolves that relaxation and half sits on the stationary level. The
+# cell volume is unity in the published model, so every amount is a number of
+# molecules and every rate constant is per second or per molecule per second.
+
+begin parameters
+  # Forward branch X + E+ <-> C+ -> X* + E+; Expression 7 and the Fig. 3 caption
+  k_plus_1   k_plus_1__FREE   # /(molecule*s)
+  k_plus_2   k_plus_2__FREE   # /s
+  k_plus_3   k_plus_3__FREE   # /s
+
+  # Reverse branch X* + E- <-> C- -> X + E-
+  k_minus_1  k_minus_1__FREE  # /(molecule*s)
+  k_minus_2  k_minus_2__FREE  # /s
+  k_minus_3  k_minus_3__FREE  # /s
+
+  # External noise driver N + N <-> E+ + N and N <-> E+; Expression 8
+  k_21        k_21__FREE  # /(molecule*s)
+  k_minus_21  5           # /(molecule*s)
+  k_22        k_22__FREE  # /s
+  k_minus_22  0.2         # /s
+
+  # Initial molecule counts; Fig. 3 caption
+  X_init        0     # molecules
+  X_star_init   2000  # molecules
+  E_plus_init   20    # molecules
+  E_minus_init  50    # molecules
+  N_init        10    # molecules
+end parameters
+
+begin molecule types
+  # Cycle substrate; site e binds either enzyme, state mod carries the
+  # covalent modification. S(mod~U) is the paper's X and S(mod~P) its X*
+  S(e,mod~U~P)
+  # Forward (modifying) enzyme E+, the noise-driven input of the cycle
+  Eplus(s)
+  # Reverse (demodifying) enzyme E-, conserved in total
+  Eminus(s)
+  # External driver species N
+  N()
+end molecule types
+
+begin seed species
+  S(e,mod~U)  X_init        # molecules
+  S(e,mod~P)  X_star_init   # molecules
+  Eplus(s)    E_plus_init   # molecules
+  Eminus(s)   E_minus_init  # molecules
+  N()         N_init        # molecules
+end seed species
+
+begin observables
+  # Free substrate in each modification state; X and X* of the paper
+  Molecules Obs_X       S(e,mod~U)
+  Molecules Obs_X_star  S(e,mod~P)
+
+  # Enzyme-substrate complexes C+ and C-
+  Molecules Obs_C_plus   Eplus(s!+)
+  Molecules Obs_C_minus  Eminus(s!+)
+
+  # Total forward enzyme E+T = E+ + C+, the noisy input signal
+  Molecules Obs_E_plus_tot  Eplus()
+
+  # Driver species N
+  Molecules Obs_N  N()
+end observables
+
+begin reaction rules
+  # Forward branch: reversible binding of the unmodified substrate by E+,
+  # then catalysis
+  R_bind_plus: S(e,mod~U) + Eplus(s) <-> S(e!1,mod~U).Eplus(s!1)  k_plus_1, k_plus_2
+  R_cat_plus: S(e!1,mod~U).Eplus(s!1) -> S(e,mod~P) + Eplus(s)  k_plus_3
+
+  # Reverse branch: reversible binding of the modified substrate by E-,
+  # then catalysis
+  R_bind_minus: S(e,mod~P) + Eminus(s) <-> S(e!1,mod~P).Eminus(s!1)  k_minus_1, k_minus_2
+  R_cat_minus: S(e!1,mod~P).Eminus(s!1) -> S(e,mod~U) + Eminus(s)  k_minus_3
+
+  # Driver: N-catalysed activation of a second N into free E+, and its reverse.
+  # One N is converted and one catalyses, so the propensity counts ordered
+  # (converted, catalyst) pairs: k_21*N*(N-1), not k_21*N*(N-1)/2. This quadratic
+  # step is what makes the driver noise close to multiplicative.
+  R_driver_auto: N() + N() -> Eplus(s) + N()  k_21
+  R_driver_auto_rev: Eplus(s) + N() -> N() + N()  k_minus_21
+
+  # Driver: spontaneous linear interconversion of N and free E+
+  R_driver_lin: N() <-> Eplus(s)  k_22, k_minus_22
+end reaction rules
+end model
+
+begin actions
+  generate_network({overwrite=>1})
+  simulate({method=>"ssa",suffix=>"ssa",t_start=>0,t_end=>0.5,n_steps=>250})
+end actions

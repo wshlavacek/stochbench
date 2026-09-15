@@ -1,0 +1,129 @@
+begin model
+#@model_id: Vilar_PNAS2002
+#@title: Noise-resistant circadian oscillator (Vilar et al., 2002)
+#@description: |
+#  A minimal circadian clock: an activator gene and a repressor gene, each
+#  transcribed and translated, with the activator protein A binding both
+#  promoters to raise their transcription rates (the positive element) and the
+#  repressor protein R sequestering A into an inactive complex C (the negative
+#  element). All rules are mass action. Deterministically it is a relaxation
+#  limit cycle of period about 25.6 h; run as a discrete Gillespie process at the
+#  same parameters the oscillation survives essentially undegraded, which is the
+#  noise resistance of the title.
+#@reference: |
+#  Vilar JMG, Kueh HY, Barkai N, Leibler S (2002). Mechanisms of noise-resistance
+#  in genetic oscillators. Proceedings of the National Academy of Sciences USA
+#  99:5988-5992. doi:10.1073/pnas.092133899
+#@source: BNGL-Models/models/noise_resistant_circadian_oscillator_vilar2002 (rev f29cc7c, 2026-09-14)
+#
+# Benchmark adaptations (see problem.json): the repressor-arm constants alpha_R,
+# beta_R, delta_R and gamma_C are free via the ``name name__FREE`` alias form,
+# these being the four the paper identifies as setting the period and the noise
+# resistance; the other eleven rate constants stay at their published values.
+# Three of the eight observables are kept (free activator, free repressor, the
+# inactive complex); the transcript counts, which average below one molecule, and
+# the promoter-occupancy indicators are dropped. The window is the first 100 h,
+# about four periods from the published empty-cell initial state, sampled hourly.
+# The cell volume is unity in the published model, so every amount below is a
+# number of molecules and every rate constant is per hour or per molecule per
+# hour, exactly as tabulated in the paper's Fig. 1 caption.
+
+begin parameters
+  # Transcription from the unbound and the activator-bound promoters
+  alpha_A      50            # /h
+  alpha_A_act  500           # /h
+  alpha_R      alpha_R__FREE # /h
+  alpha_R_act  50            # /h
+
+  # Translation
+  beta_A  50            # /h
+  beta_R  beta_R__FREE  # /h
+
+  # Spontaneous degradation
+  delta_MA  10             # /h
+  delta_MR  0.5            # /h
+  delta_A   1              # /h
+  delta_R   delta_R__FREE  # /h
+
+  # Activator binding the two promoters and the repressor
+  gamma_A  1              # /(molecule*h)
+  gamma_R  1              # /(molecule*h)
+  gamma_C  gamma_C__FREE  # /(molecule*h)
+
+  # Activator unbinding the two promoters
+  theta_A  50   # /h
+  theta_R  100  # /h
+
+  # Single-copy genes in an otherwise empty cell
+  Da_init  1  # molecules
+  Dr_init  1  # molecules
+end parameters
+
+begin molecule types
+  # Activator and repressor gene promoters; site a binds one activator protein
+  Da(a)
+  Dr(a)
+  # The two transcripts
+  Ma()
+  Mr()
+  # Activator protein; the single site s binds a promoter or the repressor,
+  # never both at once, which is what makes the network the published nine species
+  A(s)
+  # Repressor protein
+  R(a)
+end molecule types
+
+begin seed species
+  Da(a)  Da_init  # molecules
+  Dr(a)  Dr_init  # molecules
+end seed species
+
+begin observables
+  # Free activator and free repressor protein; the A and R of Fig. 2
+  Molecules Obs_A  A(s)
+  Molecules Obs_R  R(a)
+  # The inactive activator-repressor complex; the C of Figs. 3 and 4
+  Molecules Obs_C  A(s!1).R(a!1)
+end observables
+
+begin reaction rules
+  # Reversible binding of the activator to its own promoter and to the
+  # repressor promoter
+  R_bind_Da: A(s) + Da(a) <-> A(s!1).Da(a!1)  gamma_A, theta_A
+  R_bind_Dr: A(s) + Dr(a) <-> A(s!1).Dr(a!1)  gamma_R, theta_R
+
+  # Basal and activated transcription of both genes
+  R_transcribe_A_basal: Da(a) -> Da(a) + Ma()  alpha_A
+  R_transcribe_A_act: Da(a!+) -> Da(a!+) + Ma()  alpha_A_act
+  R_transcribe_R_basal: Dr(a) -> Dr(a) + Mr()  alpha_R
+  R_transcribe_R_act: Dr(a!+) -> Dr(a!+) + Mr()  alpha_R_act
+
+  # Translation of both transcripts
+  R_translate_A: Ma() -> Ma() + A(s)  beta_A
+  R_translate_R: Mr() -> Mr() + R(a)  beta_R
+
+  # Spontaneous degradation of both transcripts
+  R_degrade_Ma: Ma() -> 0  delta_MA
+  R_degrade_Mr: Mr() -> 0  delta_MR
+
+  # Spontaneous degradation of free activator and free repressor. The patterns
+  # match the unbound proteins only: promoter-bound activator does not degrade,
+  # and repressor inside the complex does not degrade at delta_R.
+  R_degrade_A: A(s) -> 0  delta_A
+  R_degrade_R: R(a) -> 0  delta_R
+
+  # Irreversible sequestration of the activator by the repressor; the published
+  # model gives the complex no dissociation route
+  R_sequester: A(s) + R(a) -> A(s!1).R(a!1)  gamma_C
+
+  # The complex decays by degradation of the activator inside it, releasing free
+  # repressor, which is why delta_A appears here as well as on R_degrade_A. This
+  # is the published model's own statement, not a simplification.
+  R_degrade_A_in_C: A(s!1).R(a!1) -> R(a)  delta_A  DeleteMolecules
+end reaction rules
+end model
+
+begin actions
+  generate_network({overwrite=>1})
+  simulate({method=>"ssa",suffix=>"ssa",t_start=>0,t_end=>100,n_steps=>100})
+end actions
