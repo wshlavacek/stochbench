@@ -46,6 +46,7 @@ methods themselves, and the median errors and costs, are in [results/](results/)
 <!-- START RESULTS TABLE -->
 | Problem ID | PyBNF |
 |:---|---:|
+| [Artyomov_PNAS2010](Benchmark-Models/Artyomov_PNAS2010/) | &ndash; |
 | [Cortes_BiophysJ2017](Benchmark-Models/Cortes_BiophysJ2017/) | &ndash; |
 | [Dembo_JImmunol1978](Benchmark-Models/Dembo_JImmunol1978/) | &ndash; |
 | [Faeder_JImmunol2003](Benchmark-Models/Faeder_JImmunol2003/) | &ndash; |
@@ -53,6 +54,7 @@ methods themselves, and the median errors and costs, are in [results/](results/)
 | [Lin_PhysRevE2016](Benchmark-Models/Lin_PhysRevE2016/) | 5% <sub>20</sub> |
 | [McKane_PhysRevLett2005](Benchmark-Models/McKane_PhysRevLett2005/) | 40% <sub>5</sub> |
 | [Munsky_Science2012](Benchmark-Models/Munsky_Science2012/) | 10% <sub>20</sub> |
+| [Posner_MathBiosci1995](Benchmark-Models/Posner_MathBiosci1995/) | &ndash; |
 | [Rubenstein_BiophysChem2007](Benchmark-Models/Rubenstein_BiophysChem2007/) | &ndash; |
 | [Samoilov_PNAS2005](Benchmark-Models/Samoilov_PNAS2005/) | &ndash; |
 | [Shahrezaei_PNAS2008](Benchmark-Models/Shahrezaei_PNAS2008/) | 80% <sub>20</sub> |
