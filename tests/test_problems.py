@@ -6,6 +6,7 @@ on hand-made records. No simulator is needed."""
 import json
 import math
 import re
+from pathlib import Path
 
 import numpy as np
 import pytest
@@ -14,12 +15,53 @@ from stochbench import protocol
 
 PROBLEMS = protocol.load_problems()
 
+ROOT = protocol.problems_root().parent
+
+#: Problem ids are permanent (PROTOCOL.md, "Versioning"): an id names one problem forever,
+#: is never reused and never renamed. Every id ever published is listed here, so a rename
+#: or a deletion fails the test suite rather than silently invalidating published results.
+PERMANENT_IDS = {
+    'Hlavacek_PNAS2001',
+    'Lin_PhysRevE2016',
+    'McKane_PhysRevLett2005',
+    'Munsky_Science2012',
+    'Shahrezaei_PNAS2008',
+    'Yang_PhysRevE2008',
+}
+
 
 def test_collection_is_not_empty_and_ids_are_directory_names():
     assert PROBLEMS
     assert [p.id for p in PROBLEMS] == sorted(p.id for p in PROBLEMS)
     for p in PROBLEMS:
         assert p.directory.name == p.id
+
+
+def test_published_problem_ids_are_still_present():
+    missing = PERMANENT_IDS - {p.id for p in PROBLEMS}
+    assert not missing, ('problem ids are permanent; %s was renamed or removed. Adding an id '
+                         'to PERMANENT_IDS is part of publishing it; taking one out is not.'
+                         % sorted(missing))
+
+
+def test_the_three_version_strings_agree():
+    """The collection version lives in three places a reader may look at. They must agree,
+    because a results file names one of them and a citation names another."""
+    pyproject = (ROOT / 'src/python/pyproject.toml').read_text()
+    citation = (ROOT / 'CITATION.cff').read_text()
+    assert re.search(r'^version = "%s"$' % re.escape(protocol.COLLECTION_VERSION),
+                     pyproject, re.M), 'pyproject.toml disagrees with protocol.COLLECTION_VERSION'
+    assert re.search(r'^version: %s$' % re.escape(protocol.COLLECTION_VERSION),
+                     citation, re.M), 'CITATION.cff disagrees with protocol.COLLECTION_VERSION'
+
+
+def test_every_published_result_names_the_collection_it_was_scored_against():
+    for path in sorted((ROOT / 'results').glob('*.json')):
+        records = json.loads(path.read_text())
+        versions = {r.get('collection_version') for r in records}
+        assert None not in versions, '%s has records without a collection_version' % path.name
+        assert len(versions) == 1, ('%s mixes collections %s; a results file reports on one'
+                                    % (path.name, sorted(versions)))
 
 
 @pytest.mark.parametrize('problem', PROBLEMS, ids=lambda p: p.id)
@@ -108,6 +150,7 @@ def test_score_fit_reports_cost_to_success_only_for_a_success():
     ok = protocol.score_fit(problem, near, 1500, trace + [(1500, _errors(problem, 0.04))], method='m', seed=1)
     assert ok['success_loose'] and ok['success_tight']
     assert ok['simulations_to_success'] == 600
+    assert ok['collection_version'] == protocol.COLLECTION_VERSION
     bad = protocol.score_fit(problem, far, 1500, trace + [(1500, _errors(problem, 0.7))], method='m', seed=2)
     assert not bad['success_loose']
     assert bad['simulations_to_success'] is None and bad['first_within_loose'] == 600

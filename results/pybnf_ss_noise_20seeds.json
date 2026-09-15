@@ -1,6 +1,7 @@
 [
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00025153719042864543,
    "k1__FREE": 9.364210461946853e-05,
@@ -176,6 +177,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00023284987262886625,
    "k1__FREE": 4.23898022810844e-05,
@@ -315,6 +317,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00018174818865094317,
    "k1__FREE": 3.6458310201372695e-05,
@@ -472,6 +475,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00021217159728016268,
    "k1__FREE": 6.224271651576418e-05,
@@ -647,6 +651,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00021025242686316148,
    "k1__FREE": 4.1169880996015674e-05,
@@ -777,6 +782,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0002489895017612048,
    "k1__FREE": 4.7774609971183806e-05,
@@ -943,6 +949,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0004316417028299283,
    "k1__FREE": 0.0001317860881338214,
@@ -1109,6 +1116,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0002807700477741148,
    "k1__FREE": 6.939724578473339e-05,
@@ -1302,6 +1310,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0007019765459243886,
    "k1__FREE": 0.00023055119677122598,
@@ -1495,6 +1504,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0002862810877217068,
    "k1__FREE": 6.450353201228664e-05,
@@ -1643,6 +1653,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 45.715331930020646,
    "r0__FREE": 0.00037200965018547314,
@@ -1755,6 +1766,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 46.07409863476055,
    "r0__FREE": 0.00047487624515543035,
@@ -1849,6 +1861,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 54.9319204174557,
    "r0__FREE": 0.0008429676417445926,
@@ -2033,6 +2046,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 56.482678557455365,
    "r0__FREE": 0.0001756006703192181,
@@ -2163,6 +2177,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 53.61225797294008,
    "r0__FREE": 0.0002053836503107551,
@@ -2293,6 +2308,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 45.51083407253474,
    "r0__FREE": 0.0002671169689254062,
@@ -2432,6 +2448,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 81.36669177071124,
    "r0__FREE": 0.00013422780916208212,
@@ -2526,6 +2543,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 49.67313364025342,
    "r0__FREE": 0.0002516676612156074,
@@ -2701,6 +2719,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 76.8704053653246,
    "r0__FREE": 0.0001218265149313336,
@@ -2822,6 +2841,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 70.10619530392898,
    "r0__FREE": 0.00023327337301879805,
@@ -2961,6 +2981,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09321846918731722,
    "d1__FREE": 0.1092450216790661,
@@ -3118,6 +3139,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09672966003482553,
    "d1__FREE": 0.10484024872928849,
@@ -3302,6 +3324,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09016358409466252,
    "d1__FREE": 0.10506404181268814,
@@ -3522,6 +3545,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09143334175345767,
    "d1__FREE": 0.11006847056616785,
@@ -3688,6 +3712,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.1176608777111088,
    "d1__FREE": 0.08995652821913916,
@@ -3890,6 +3915,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09717576491827845,
    "d1__FREE": 0.10830575744378038,
@@ -4083,6 +4109,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.21088778129788419,
    "d1__FREE": 0.058996680024983886,
@@ -4258,6 +4285,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09171484587517323,
    "d1__FREE": 0.10695272503341925,
@@ -4433,6 +4461,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.10046285451508087,
    "d1__FREE": 0.11080253432741737,
@@ -4662,6 +4691,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.18346598729821675,
    "d1__FREE": 0.04261798784743093,
@@ -4819,6 +4849,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00017097312828323824,
    "k_off_I__FREE": 0.0005042656135968061,
@@ -5107,6 +5138,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0014319290236138181,
    "k_off_I__FREE": 0.006477929304913868,
@@ -5373,6 +5405,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00017716047259698576,
    "k_off_I__FREE": 0.00019278457965254432,
@@ -5639,6 +5672,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00020825330765830046,
    "k_off_I__FREE": 0.0009413160871163871,
@@ -5883,6 +5917,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00020286395167714482,
    "k_off_I__FREE": 0.00017867962906463543,
@@ -6138,6 +6173,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0008551518315760418,
    "k_off_I__FREE": 0.0034472431530786197,
@@ -6360,6 +6396,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.000580012514696686,
    "k_off_I__FREE": 0.0031545323966235455,
@@ -6571,6 +6608,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0006695233133249294,
    "k_off_I__FREE": 0.0031713260429796315,
@@ -6793,6 +6831,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0004808961006441008,
    "k_off_I__FREE": 0.002590184296146646,
@@ -7070,6 +7109,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00012840798357050247,
    "k_off_I__FREE": 0.00012948442889076667,
@@ -7215,6 +7255,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00023701680487915816,
    "k1__FREE": 4.9670175937857874e-05,
@@ -7390,6 +7431,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0003338859623294847,
    "k1__FREE": 0.00011764632756703921,
@@ -7583,6 +7625,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00016812332681875208,
    "k1__FREE": 3.122783002469196e-05,
@@ -7695,6 +7738,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00038201292280070433,
    "k1__FREE": 0.00013597379293820452,
@@ -7915,6 +7959,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00024913457860181005,
    "k1__FREE": 5.97156540867557e-05,
@@ -8081,6 +8126,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00024204891254480434,
    "k1__FREE": 6.612631410406547e-05,
@@ -8256,6 +8302,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00047322386928554897,
    "k1__FREE": 0.00018612248312353891,
@@ -8413,6 +8460,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0002202114912862841,
    "k1__FREE": 6.310868287221226e-05,
@@ -8660,6 +8708,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0002531214195676528,
    "k1__FREE": 7.451666203059797e-05,
@@ -8853,6 +8902,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00016584066876027906,
    "k1__FREE": 4.727562546556334e-05,
@@ -9073,6 +9123,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00036433833276790754,
    "k1__FREE": 9.348049946339166e-05,
@@ -9239,6 +9290,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00017334622433933802,
    "k1__FREE": 3.72257403815172e-05,
@@ -9396,6 +9448,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00018420869716812574,
    "k1__FREE": 1.9103193016843824e-05,
@@ -9553,6 +9606,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0001869534378779318,
    "k1__FREE": 3.564125739546047e-05,
@@ -9755,6 +9809,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0002665026914062264,
    "k1__FREE": 5.8653507043633e-05,
@@ -9885,6 +9940,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00016963923942811966,
    "k1__FREE": 6.378908553558061e-05,
@@ -10087,6 +10143,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00033964404826427843,
    "k1__FREE": 8.198335625801762e-05,
@@ -10271,6 +10328,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0002818633835756163,
    "k1__FREE": 4.974003277398573e-05,
@@ -10419,6 +10477,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00020305166878562786,
    "k1__FREE": 3.2635693744221014e-05,
@@ -10549,6 +10608,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00020824887278476253,
    "k1__FREE": 6.991762851605856e-05,
@@ -10724,6 +10784,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00019379855372327122,
    "k1__FREE": 2.420310098589676e-05,
@@ -10908,6 +10969,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0002203010825458803,
    "k1__FREE": 5.915926347785692e-05,
@@ -11056,6 +11118,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00024898006758495016,
    "k1__FREE": 5.059143768272836e-05,
@@ -11195,6 +11258,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0002136665842138459,
    "k1__FREE": 8.399884587143788e-05,
@@ -11298,6 +11362,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00027464469027429095,
    "k1__FREE": 5.5734258984501385e-05,
@@ -11509,6 +11574,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00036098208751529447,
    "k1__FREE": 0.00014896472377779317,
@@ -11666,6 +11732,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00023030224926680754,
    "k1__FREE": 2.505474089778502e-05,
@@ -11778,6 +11845,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0001632450102253647,
    "k1__FREE": 7.991914446998993e-05,
@@ -11944,6 +12012,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 57.57794101279714,
    "r0__FREE": 0.00013702475086585102,
@@ -12137,6 +12206,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 36.15707630319044,
    "r0__FREE": 0.0003182678671605958,
@@ -12330,6 +12400,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 46.90488893075998,
    "r0__FREE": 0.00022031243125700722,
@@ -12622,6 +12693,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 41.90816797101305,
    "r0__FREE": 0.00016282719368098595,
@@ -12752,6 +12824,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.000373688248469682,
    "k1__FREE": 7.526293821292206e-05,
@@ -12900,6 +12973,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00020571332009952265,
    "k1__FREE": 5.821440938127536e-05,
@@ -13048,6 +13122,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 46.39320066342899,
    "r0__FREE": 0.00026247480399916136,
@@ -13259,6 +13334,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 48.1767590555446,
    "r0__FREE": 0.00017603139946886464,
@@ -13380,6 +13456,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 43.92198689731846,
    "r0__FREE": 0.00029615086659021215,
@@ -13618,6 +13695,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 39.677659013647286,
    "r0__FREE": 0.00043391412786335394,
@@ -13793,6 +13871,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 57.78728443553971,
    "r0__FREE": 0.00025614240896279646,
@@ -13950,6 +14029,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 45.62089546644901,
    "r0__FREE": 0.0002410372038606111,
@@ -14143,6 +14223,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 64.93089319665485,
    "r0__FREE": 0.00029770178469095386,
@@ -14300,6 +14381,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 44.57523161777103,
    "r0__FREE": 0.00043005024145883623,
@@ -14448,6 +14530,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 43.54146883039008,
    "r0__FREE": 0.0001781451311045248,
@@ -14641,6 +14724,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 47.70016032082336,
    "r0__FREE": 0.00026936268133281773,
@@ -14798,6 +14882,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 55.00477668699021,
    "r0__FREE": 0.0004442603026469393,
@@ -14928,6 +15013,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 52.337028163093514,
    "r0__FREE": 0.0002865217346722191,
@@ -15076,6 +15162,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 55.34207106322071,
    "r0__FREE": 0.0002936421596424298,
@@ -15314,6 +15401,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 36.05371718322727,
    "r0__FREE": 0.00033092426381029215,
@@ -15426,6 +15514,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 36.3868727827969,
    "r0__FREE": 0.00017070609182774621,
@@ -15592,6 +15681,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 58.271851471747894,
    "r0__FREE": 0.00015309922922437054,
@@ -15713,6 +15803,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 40.58242870798333,
    "r0__FREE": 0.000423674108126366,
@@ -15897,6 +15988,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 69.60319376186456,
    "r0__FREE": 0.00012635033044976118,
@@ -15991,6 +16083,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 73.06858365275839,
    "r0__FREE": 8.571127770254956e-05,
@@ -16121,6 +16214,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 48.744710964879985,
    "r0__FREE": 0.0002695955288436968,
@@ -16260,6 +16354,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 49.86112203847213,
    "r0__FREE": 0.00030162697384558776,
@@ -16444,6 +16539,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 72.52820900828137,
    "r0__FREE": 0.0003115046744288865,
@@ -16619,6 +16715,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 53.67598223350931,
    "r0__FREE": 0.00026575221006940486,
@@ -16749,6 +16846,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 67.9723851516976,
    "r0__FREE": 0.00011601039165107956,
@@ -16933,6 +17031,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 40.921829233404594,
    "r0__FREE": 0.0007358445543741059,
@@ -17090,6 +17189,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0010251020151175608,
    "k_off_I__FREE": 0.004224927535623861,
@@ -17301,6 +17401,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 42.357966734490795,
    "r0__FREE": 0.0001946051935151122,
@@ -17485,6 +17586,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00027198534174835225,
    "k_off_I__FREE": 0.0006338736319509375,
@@ -17663,6 +17765,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.004518238609640656,
    "k_off_I__FREE": 0.03126773070199616,
@@ -17896,6 +17999,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0003021805801497991,
    "k_off_I__FREE": 0.0013960238188138563,
@@ -18129,6 +18233,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0008222231619707105,
    "k_off_I__FREE": 0.0031530672946884497,
@@ -18296,6 +18401,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.002371522020290399,
    "k_off_I__FREE": 0.00750159272811974,
@@ -18452,6 +18558,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0012919537422026344,
    "k_off_I__FREE": 0.00426685406300597,
@@ -18619,6 +18726,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00028787382763311196,
    "k_off_I__FREE": 0.0006369510441580406,
@@ -18797,6 +18905,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0006016721596606434,
    "k_off_I__FREE": 0.0035224789710404645,
@@ -19019,6 +19128,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.000562628362149723,
    "k_off_I__FREE": 0.0017543549298137783,
@@ -19307,6 +19417,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 9.40026213568669e-05,
    "k_off_I__FREE": 0.00025523224228781734,
@@ -19540,6 +19651,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0010341094807358219,
    "k_off_I__FREE": 0.006603139133255296,
@@ -19718,6 +19830,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0011082990772419091,
    "k_off_I__FREE": 0.009329524785403831,
@@ -19896,6 +20009,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0010898152101845341,
    "k_off_I__FREE": 0.006213782451156764,
@@ -20063,6 +20177,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00014241483075554405,
    "k_off_I__FREE": 0.00020630185007135854,
@@ -20197,6 +20312,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0005726193258528446,
    "k_off_I__FREE": 0.0016167589649687972,
@@ -20430,6 +20546,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0002437257752531271,
    "k_off_I__FREE": 0.0008293664749387714,
@@ -20652,6 +20769,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.003249563119547262,
    "k_off_I__FREE": 0.013352890880598831,
@@ -20841,6 +20959,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.001015006415645991,
    "k_off_I__FREE": 0.0037201963488044244,
@@ -21096,6 +21215,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0006372861706430363,
    "k_off_I__FREE": 0.002777654917094202,
@@ -21241,6 +21361,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0017993889317037257,
    "k_off_I__FREE": 0.004587553909542457,
@@ -21441,6 +21562,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.09361049260869114,
    "k_off_I__FREE": 0.9556574566131377,
@@ -21608,6 +21730,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0001971838742169466,
    "k_off_I__FREE": 0.0005692786879160722,
@@ -21797,6 +21920,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.04126413810038777,
    "k_off_I__FREE": 0.24815716644816557,
@@ -21953,6 +22077,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.001090249068691624,
    "k_off_I__FREE": 0.00863915262865774,
@@ -22208,6 +22333,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 8.195056292948582e-05,
    "k_off_I__FREE": 0.00017157039476589715,
@@ -22375,6 +22501,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0011875807807443957,
    "k_off_I__FREE": 0.005834242424840131,
@@ -22608,6 +22735,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00019226735993188376,
    "k_off_I__FREE": 0.0007299041855427108,
@@ -22841,6 +22969,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0002713742055910925,
    "k_off_I__FREE": 0.002386456377622292,
@@ -23052,6 +23181,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.000926576230937232,
    "k_off_I__FREE": 0.005180111715574144,
@@ -23175,6 +23305,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09683496602691292,
    "d1__FREE": 0.10958788970749267,
@@ -23395,6 +23526,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.14594354232444795,
    "d1__FREE": 0.0788104108611418,
@@ -23516,6 +23648,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09064768104978065,
    "d1__FREE": 0.0872036725349327,
@@ -23637,6 +23770,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09712063949699211,
    "d1__FREE": 0.11252754000685981,
@@ -23857,6 +23991,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.10233870665214824,
    "d1__FREE": 0.0848328069735995,
@@ -23996,6 +24131,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09315115841563497,
    "d1__FREE": 0.11046399347225444,
@@ -24171,6 +24307,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.0895737552309417,
    "d1__FREE": 0.1049366242882766,
@@ -24319,6 +24456,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09344221490027967,
    "d1__FREE": 0.11016919712797119,
@@ -24467,6 +24605,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.10646816587715603,
    "d1__FREE": 0.10100826606000882,
@@ -24669,6 +24808,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.08679299599916694,
    "d1__FREE": 0.10341090695066454,
@@ -24907,6 +25047,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.0920431341918624,
    "d1__FREE": 0.10629101107420127,
@@ -25082,6 +25223,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.10102167266199237,
    "d1__FREE": 0.09459710430565246,
@@ -25284,6 +25426,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.1141950504101192,
    "d1__FREE": 0.08248423420299361,
@@ -25414,6 +25557,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09836309475499276,
    "d1__FREE": 0.1155653701907507,
@@ -25571,6 +25715,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09610650632391089,
    "d1__FREE": 0.10485351994628889,
@@ -25710,6 +25855,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.10016173259820166,
    "d1__FREE": 0.09972457059731021,
@@ -25939,6 +26085,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09156389314398428,
    "d1__FREE": 0.10720896684901736,
@@ -26087,6 +26234,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.07579665637567219,
    "d1__FREE": 0.09263849867694302,
@@ -26271,6 +26419,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.15014825496370524,
    "d1__FREE": 0.09050331118182241,
@@ -26455,6 +26604,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.11245413737197256,
    "d1__FREE": 0.08986360327540774,
@@ -26630,6 +26780,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09436494978922046,
    "d1__FREE": 0.09582281355923325,
@@ -26805,6 +26956,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.08441666135100205,
    "d1__FREE": 0.1004629687452457,
@@ -26944,6 +27096,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09212030421512392,
    "d1__FREE": 0.10836311815183539,
@@ -27110,6 +27263,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.12496620176356224,
    "d1__FREE": 0.0877229404377364,
@@ -27285,6 +27439,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09371261146445733,
    "d1__FREE": 0.10278078778913563,
@@ -27442,6 +27597,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.0920131355282256,
    "d1__FREE": 0.10690975508017554,
@@ -27635,6 +27791,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09487355894186038,
    "d1__FREE": 0.11429583006593542,
@@ -27819,6 +27976,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.10776132254759165,
    "d1__FREE": 0.0949327269060629,
@@ -28003,6 +28161,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.17592755776279467,
    "d1__FREE": 0.031949372246084594,
@@ -28187,6 +28346,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.11059708795417209,
    "d1__FREE": 0.06160165870011596,
@@ -28308,6 +28468,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0002421741058195397,
    "k1__FREE": 7.985182000657556e-05,
@@ -28505,6 +28666,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00021424560242781215,
    "k1__FREE": 4.328827467471402e-05,
@@ -28675,6 +28837,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.000171699317734539,
    "k1__FREE": 4.080192521575833e-05,
@@ -28809,6 +28972,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00023966288381680064,
    "k1__FREE": 3.1155880703428536e-05,
@@ -29024,6 +29188,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00030018305811684877,
    "k1__FREE": 5.6521447201147786e-05,
@@ -29212,6 +29377,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0002882643392596857,
    "k1__FREE": 6.81185059227951e-05,
@@ -29364,6 +29530,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00018579407878465388,
    "k1__FREE": 3.4217737706344065e-05,
@@ -29525,6 +29692,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0002057281126171546,
    "k1__FREE": 4.2939066199222695e-05,
@@ -29695,6 +29863,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00024460582358253003,
    "k1__FREE": 3.085052738960168e-05,
@@ -29883,6 +30052,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0003129710693333018,
    "k1__FREE": 7.387379035665456e-05,
@@ -30080,6 +30250,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0003610825564734008,
    "k1__FREE": 8.866046631757156e-05,
@@ -30223,6 +30394,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0001739317872498168,
    "k1__FREE": 4.005061544245663e-05,
@@ -30375,6 +30547,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0005504453296567874,
    "k1__FREE": 0.00017032438002496247,
@@ -30536,6 +30709,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00025276884029945855,
    "k1__FREE": 7.827261408529626e-05,
@@ -30742,6 +30916,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0001641029981845844,
    "k1__FREE": 2.367680968132112e-05,
@@ -30921,6 +31096,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00018724096439622139,
    "k1__FREE": 1.2828305957487008e-05,
@@ -31046,6 +31222,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 53.86919775640135,
    "r0__FREE": 0.00031933999279740784,
@@ -31198,6 +31375,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 59.71675789401031,
    "r0__FREE": 9.56498049926979e-05,
@@ -31314,6 +31492,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 36.81714423750428,
    "r0__FREE": 0.00023933850416474304,
@@ -31511,6 +31690,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 39.89129284527091,
    "r0__FREE": 0.00022454576835948288,
@@ -31627,6 +31807,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0003272055968170862,
    "k1__FREE": 0.00011641590525341914,
@@ -31743,6 +31924,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00022271756869254438,
    "k1__FREE": 5.340877871452265e-05,
@@ -31868,6 +32050,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0003087130196866413,
    "k1__FREE": 6.994592345992446e-05,
@@ -32047,6 +32230,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00031597144131895416,
    "k1__FREE": 6.195537156128474e-05,
@@ -32226,6 +32410,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 44.437392255804525,
    "r0__FREE": 0.00028306016084338637,
@@ -32369,6 +32554,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 42.815324436730116,
    "r0__FREE": 0.00014450927909868464,
@@ -32512,6 +32698,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 44.117403793699914,
    "r0__FREE": 0.0003046913004149332,
@@ -32763,6 +32950,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 54.37890424088248,
    "r0__FREE": 0.0005988352128734422,
@@ -32879,6 +33067,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 57.343724846353034,
    "r0__FREE": 0.00018462441517942685,
@@ -33058,6 +33247,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 45.781652280928725,
    "r0__FREE": 0.00029187344192511277,
@@ -33165,6 +33355,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 43.24545533675849,
    "r0__FREE": 0.00031997740538485285,
@@ -33308,6 +33499,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 32.39818339372349,
    "r0__FREE": 0.0007470301581919143,
@@ -33514,6 +33706,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 49.75710604962001,
    "r0__FREE": 0.00027171046863239487,
@@ -33684,6 +33877,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 36.73129888412501,
    "r0__FREE": 0.000317781060165568,
@@ -33872,6 +34066,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 50.344361792582056,
    "r0__FREE": 0.00015411547050376854,
@@ -34069,6 +34264,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 34.6363399326715,
    "r0__FREE": 0.0003358056903528169,
@@ -34221,6 +34417,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 34.05346543229179,
    "r0__FREE": 0.00041032182791475287,
@@ -34382,6 +34579,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 44.0967237071186,
    "r0__FREE": 0.00016274074929330235,
@@ -34534,6 +34732,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 75.1598148337593,
    "r0__FREE": 0.00013958425435477107,
@@ -34704,6 +34903,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00036734578129789356,
    "k_off_I__FREE": 0.0014226370054599348,
@@ -34930,6 +35130,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 62.27412756060259,
    "r0__FREE": 0.0002893529600272961,
@@ -35082,6 +35283,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0006078695103369905,
    "k_off_I__FREE": 0.0030563984400941062,
@@ -35363,6 +35565,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00015976597655162515,
    "k_off_I__FREE": 0.0007996254611895912,
@@ -35578,6 +35781,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0006087422579689557,
    "k_off_I__FREE": 0.0020146771361859673,
@@ -35859,6 +36063,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.002624349144769926,
    "k_off_I__FREE": 0.03289487411972991,
@@ -36085,6 +36290,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00018396423846863197,
    "k_off_I__FREE": 0.0004283211170364616,
@@ -36300,6 +36506,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00019769804916551368,
    "k_off_I__FREE": 0.0010092099695784814,
@@ -36526,6 +36733,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0057479010124409325,
    "k_off_I__FREE": 0.04617911200894783,
@@ -36708,6 +36916,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00028853554626294295,
    "k_off_I__FREE": 0.0012152079899249363,
@@ -36945,6 +37154,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00046046910793179347,
    "k_off_I__FREE": 0.000874225448241629,
@@ -37127,6 +37337,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00046863629915878187,
    "k_off_I__FREE": 0.0015451934286994783,
@@ -37375,6 +37586,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.009095322491643805,
    "k_off_I__FREE": 0.08629339756026759,
@@ -37513,6 +37725,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.000700950414434817,
    "k_off_I__FREE": 0.004328757144374344,
@@ -37728,6 +37941,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0004571078538286595,
    "k_off_I__FREE": 0.0012283350591170716,
@@ -37910,6 +38124,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.01174618148854686,
    "k_off_I__FREE": 0.09341028283392462,
@@ -38125,6 +38340,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00017989230333281724,
    "k_off_I__FREE": 0.0002245725251386062,
@@ -38340,6 +38556,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.002291584370938553,
    "k_off_I__FREE": 0.013470506936729585,
@@ -38533,6 +38750,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.002731667161868822,
    "k_off_I__FREE": 0.014040401471294964,
@@ -38726,6 +38944,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.009461255473356914,
    "k_off_I__FREE": 0.09656551153235521,
@@ -38919,6 +39138,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0004905346626258176,
    "k_off_I__FREE": 0.001159524125483557,
@@ -39057,6 +39277,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.10413079708818467,
    "d1__FREE": 0.11255573474423279,
@@ -39290,6 +39511,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.10050173556272336,
    "d1__FREE": 0.11058298871064896,
@@ -39451,6 +39673,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09429948854482353,
    "d1__FREE": 0.1065675178916895,
@@ -39603,6 +39826,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.10198735833498261,
    "d1__FREE": 0.08682246159922215,
@@ -39827,6 +40051,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.14698930149356348,
    "d1__FREE": 0.06681354820593528,
@@ -39979,6 +40204,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.10246190530346468,
    "d1__FREE": 0.09491383071315165,
@@ -40194,6 +40420,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.15511725074244123,
    "d1__FREE": 0.0704119450956735,
@@ -40292,6 +40519,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09057321528354824,
    "d1__FREE": 0.09816697254684453,
@@ -40453,6 +40681,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.10750768837275879,
    "d1__FREE": 0.08360539773575316,
@@ -40641,6 +40870,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.14497941843910514,
    "d1__FREE": 0.05343492958759027,
@@ -40811,6 +41041,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.1112721760974064,
    "d1__FREE": 0.08715603252411196,
@@ -40963,6 +41194,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09525566143231773,
    "d1__FREE": 0.11269816708842405,
@@ -41133,6 +41365,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09468630103875701,
    "d1__FREE": 0.1018308028162478,
@@ -41348,6 +41581,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09814253470359613,
    "d1__FREE": 0.11552194988142574,
@@ -41536,6 +41770,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.10819074417619699,
    "d1__FREE": 0.1225863339800866,
@@ -41715,6 +41950,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.08753922134161579,
    "d1__FREE": 0.10347738663880933,
@@ -41921,6 +42157,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.0889873205650178,
    "d1__FREE": 0.10679967040573238,
@@ -42091,6 +42328,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09322599273889928,
    "d1__FREE": 0.0998278474236953,
@@ -42306,6 +42544,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.11059708795417209,
    "d1__FREE": 0.06160165870011596,
@@ -42413,6 +42652,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.2228124902957871,
    "d1__FREE": 0.2390500487343653,
@@ -42583,6 +42823,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00047736919137045296,
    "k1__FREE": 0.00014768430000345437,
@@ -42735,6 +42976,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00033187606836994934,
    "k1__FREE": 9.49304278814513e-05,
@@ -42869,6 +43111,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0001820652818302378,
    "k1__FREE": 2.2627468743533e-05,
@@ -43003,6 +43246,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0002499583470315279,
    "k1__FREE": 7.717563116034065e-05,
@@ -43218,6 +43462,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00023226916337020943,
    "k1__FREE": 5.533424230284542e-05,
@@ -43379,6 +43624,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0003305638418501228,
    "k1__FREE": 8.490586068823667e-05,
@@ -43549,6 +43795,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0003207783153632722,
    "k1__FREE": 7.298055323655991e-05,
@@ -43746,6 +43993,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00035221711867740855,
    "k1__FREE": 7.76811036311182e-05,
@@ -43925,6 +44173,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00016931448089582525,
    "k1__FREE": 2.8895298374157515e-05,
@@ -44113,6 +44362,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00040529556773757404,
    "k1__FREE": 9.55961480402398e-05,
@@ -44229,6 +44479,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00031771907315432125,
    "k1__FREE": 7.316844450210471e-05,
@@ -44408,6 +44659,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00028617103400082824,
    "k1__FREE": 6.358892755639084e-05,
@@ -44569,6 +44821,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0002584690390219021,
    "k1__FREE": 3.87789856760077e-05,
@@ -44721,6 +44974,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00034946530383525077,
    "k1__FREE": 0.00010761809266281424,
@@ -44918,6 +45172,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00032482558349760835,
    "k1__FREE": 6.627349624309719e-05,
@@ -45088,6 +45343,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00015522114873801074,
    "k1__FREE": 2.042824066829121e-05,
@@ -45231,6 +45487,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 48.305772282871786,
    "r0__FREE": 0.00014152456753409862,
@@ -45356,6 +45613,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 51.73228435309314,
    "r0__FREE": 0.00025494418318358544,
@@ -45454,6 +45712,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 37.60381728013601,
    "r0__FREE": 0.00025047848825421467,
@@ -45579,6 +45838,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 39.46741775377407,
    "r0__FREE": 8.741443773016598e-05,
@@ -45794,6 +46054,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00026993826762873195,
    "k1__FREE": 5.339325177379221e-05,
@@ -45937,6 +46198,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0004252360456619432,
    "k1__FREE": 0.00011821004340599212,
@@ -46089,6 +46351,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.0005142861896944484,
    "k1__FREE": 0.00016154480280313916,
@@ -46259,6 +46522,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
+  "collection_version": "0.1.0",
   "estimate": {
    "k0__FREE": 0.00044900909181095174,
    "k1__FREE": 0.00014253733870348532,
@@ -46384,6 +46648,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 55.26857060007612,
    "r0__FREE": 0.00020336323502219438,
@@ -46527,6 +46792,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 56.19506958921505,
    "r0__FREE": 0.00011332494749823852,
@@ -46661,6 +46927,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 53.804018997591285,
    "r0__FREE": 0.00027605196409172624,
@@ -46768,6 +47035,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 38.351546020237784,
    "r0__FREE": 0.0005487025682149997,
@@ -46875,6 +47143,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 59.52422546311529,
    "r0__FREE": 0.00021933860592247977,
@@ -47117,6 +47386,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 48.04478650854313,
    "r0__FREE": 0.00024330766783013303,
@@ -47332,6 +47602,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 44.4246157649699,
    "r0__FREE": 0.0002955732675178137,
@@ -47547,6 +47818,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 59.57006693825575,
    "r0__FREE": 0.000243551536529759,
@@ -47672,6 +47944,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 54.55061585533506,
    "r0__FREE": 0.00017805720771241188,
@@ -47824,6 +48097,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 47.490987931696374,
    "r0__FREE": 0.00021120964858095253,
@@ -47994,6 +48268,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 37.504575773369695,
    "r0__FREE": 0.00029141208581180477,
@@ -48200,6 +48475,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 34.75346380908563,
    "r0__FREE": 0.0006386718351409912,
@@ -48316,6 +48592,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 43.0859184771588,
    "r0__FREE": 0.00020929896954770732,
@@ -48468,6 +48745,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 68.25050409967389,
    "r0__FREE": 0.00012600636749097424,
@@ -48638,6 +48916,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 37.45136120196132,
    "r0__FREE": 0.0008705344828249189,
@@ -48799,6 +49078,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
+  "collection_version": "0.1.0",
   "estimate": {
    "B__FREE": 47.38440601148504,
    "r0__FREE": 0.00019836102881786583,
@@ -48969,6 +49249,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00041869792635094327,
    "k_off_I__FREE": 0.00178476334110347,
@@ -49173,6 +49454,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00013818549576878427,
    "k_off_I__FREE": 0.00017921522325837168,
@@ -49421,6 +49703,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0010656156647835626,
    "k_off_I__FREE": 0.005101168766789756,
@@ -49636,6 +49919,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0017101350327092064,
    "k_off_I__FREE": 0.008898211333197832,
@@ -49895,6 +50179,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00013978348774116824,
    "k_off_I__FREE": 0.00013403474382345126,
@@ -50088,6 +50373,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0001379492472426387,
    "k_off_I__FREE": 0.0007477076642463643,
@@ -50292,6 +50578,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00030274036707552565,
    "k_off_I__FREE": 0.0011131277412467703,
@@ -50496,6 +50783,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.002898585523461075,
    "k_off_I__FREE": 0.017661800106923562,
@@ -50722,6 +51010,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00020886937331499134,
    "k_off_I__FREE": 0.0012624845403220264,
@@ -50981,6 +51270,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0005663742322856123,
    "k_off_I__FREE": 0.002399774101843278,
@@ -51163,6 +51453,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.00023191271578364432,
    "k_off_I__FREE": 0.004508673555334357,
@@ -51367,6 +51658,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.011578150417395143,
    "k_off_I__FREE": 0.062355578927804384,
@@ -51516,6 +51808,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0007366675944760333,
    "k_off_I__FREE": 0.0033687347000546067,
@@ -51731,6 +52024,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0004302244577947977,
    "k_off_I__FREE": 0.0023507146635164435,
@@ -51957,6 +52251,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0011436301769680252,
    "k_off_I__FREE": 0.00885356534032845,
@@ -52139,6 +52434,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0021729699536547488,
    "k_off_I__FREE": 0.01262289814846844,
@@ -52321,6 +52617,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0007243558825211065,
    "k_off_I__FREE": 0.0037193295289809536,
@@ -52525,6 +52822,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0009240336534696112,
    "k_off_I__FREE": 0.006326030997164803,
@@ -52707,6 +53005,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.01828445982615005,
    "k_off_I__FREE": 0.10407996788628968,
@@ -52878,6 +53177,7 @@
  },
  {
   "problem": "Munsky_Science2012",
+  "collection_version": "0.1.0",
   "estimate": {
    "k_on_I__FREE": 0.0012904708170168662,
    "k_off_I__FREE": 0.013935238138889939,
@@ -53005,6 +53305,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.10478780677844114,
    "d1__FREE": 0.09926983454287835,
@@ -53184,6 +53485,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09176605985590472,
    "d1__FREE": 0.1083387109017147,
@@ -53426,6 +53728,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09119627123203596,
    "d1__FREE": 0.10425017528915032,
@@ -53623,6 +53926,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.08723916654493237,
    "d1__FREE": 0.10048867240966901,
@@ -53847,6 +54151,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.11200318121529983,
    "d1__FREE": 0.1193188997275676,
@@ -54026,6 +54331,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.0971671927743196,
    "d1__FREE": 0.10454874851439931,
@@ -54232,6 +54538,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.1012985292118072,
    "d1__FREE": 0.10620323276781278,
@@ -54438,6 +54745,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.12292772478062022,
    "d1__FREE": 0.07760852843237794,
@@ -54590,6 +54898,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.1349310012131351,
    "d1__FREE": 0.051451355137745854,
@@ -54769,6 +55078,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.15272762575842594,
    "d1__FREE": 0.05635263885823501,
@@ -54948,6 +55258,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.10381321824181589,
    "d1__FREE": 0.09285668835733288,
@@ -55127,6 +55438,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.10056342283377856,
    "d1__FREE": 0.11058660798554644,
@@ -55270,6 +55582,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09565363283607754,
    "d1__FREE": 0.10061403299342767,
@@ -55476,6 +55789,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09248954523729265,
    "d1__FREE": 0.11132857123126313,
@@ -55682,6 +55996,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.15635713902267054,
    "d1__FREE": 0.07707469570236011,
@@ -55861,6 +56176,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09016270913369256,
    "d1__FREE": 0.10856581566923588,
@@ -56013,6 +56329,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09000309466473143,
    "d1__FREE": 0.10622108429468756,
@@ -56192,6 +56509,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.09665912949507112,
    "d1__FREE": 0.10107409226096906,
@@ -56407,6 +56725,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.11059708795417209,
    "d1__FREE": 0.06160165870011596,
@@ -56523,6 +56842,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
+  "collection_version": "0.1.0",
   "estimate": {
    "b__FREE": 0.12355359132507494,
    "d1__FREE": 0.13322453355763245,
