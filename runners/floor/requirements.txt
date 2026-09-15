@@ -1,0 +1,6 @@
+# The floor's dependencies. stochbench itself needs none of these -- protocol.py is
+# pure standard library -- but a runner has to actually simulate.
+numpy>=1.24
+scipy>=1.10
+cma>=3.3
+bngsim==0.15.0

@@ -72,6 +72,31 @@ def test_every_published_result_names_the_collection_it_was_scored_against():
                                     % (path.name, sorted(versions)))
 
 
+def test_every_published_result_names_the_tool_that_produced_it():
+    """The README's results table has one column per tool, so an unattributed record would
+    put numbers in a column with no name."""
+    for path in sorted((ROOT / 'results').glob('*.json')):
+        for r in json.loads(path.read_text()):
+            assert r.get('tool'), '%s: a record for %s has no "tool"' % (path.name, r.get('problem'))
+
+
+def test_results_table_covers_every_problem_and_every_tool():
+    from stochbench import overview
+    records = overview.load_results()
+    text = overview.results_table(PROBLEMS, records)
+    for p in PROBLEMS:
+        assert p.id in text
+    for tool in {r['tool'] for r in records}:
+        assert tool in text.splitlines()[0]
+    # A problem no tool has reported on shows a dash, not a blank or a zero: those would
+    # read as "every method failed" rather than "nobody has run it".
+    reported = {r['problem'] for r in records}
+    for line in text.splitlines()[2:]:
+        pid = line.split(']')[0].lstrip('| [')
+        if pid not in reported:
+            assert '&ndash;' in line, pid
+
+
 @pytest.mark.parametrize('problem', PROBLEMS, ids=lambda p: p.id)
 def test_problem_definition_is_self_consistent(problem):
     assert problem.version == protocol.FORMAT_VERSION
