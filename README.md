@@ -21,7 +21,7 @@ The protocol (what a problem is, how the data are made, how a fit is scored) is 
 | Problem ID | Free parameters | Method | Observables | Sampling times | Data replicates | Budget (simulations) | References |
 |:---|---:|:---|---:|---:|---:|---:|:---|
 | [Cortes_BiophysJ2017](Benchmark-Models/Cortes_BiophysJ2017/) | 6 | nf | 5 | 121 | 200 | 20000 | [\[1\]](https://doi.org/10.1016/j.bpj.2017.09.012) |
-| [Dembo_JImmunol1978](Benchmark-Models/Dembo_JImmunol1978/) | 3 | nf | 4 | 51 | 100 | 4000 | [\[1\]](https://doi.org/10.4049/jimmunol.121.1.345) |
+| [Dembo_JImmunol1978](Benchmark-Models/Dembo_JImmunol1978/) | 3 | nf | 4 | 51 | 100 | 2000 | [\[1\]](https://doi.org/10.4049/jimmunol.121.1.345) |
 | [Faeder_JImmunol2003](Benchmark-Models/Faeder_JImmunol2003/) | 6 | ssa | 6 | 61 | 200 | 4000 | [\[1\]](https://doi.org/10.4049/jimmunol.170.7.3769) |
 | [Hlavacek_PNAS2001](Benchmark-Models/Hlavacek_PNAS2001/) | 4 | ssa | 3 | 61 | 200 | 20000 | [\[1\]](https://doi.org/10.1073/pnas.121172298) [\[2\]](https://doi.org/10.1006/bulm.2002.0306) |
 | [Lin_PhysRevE2016](Benchmark-Models/Lin_PhysRevE2016/) | 4 | ssa | 2 | 73 | 200 | 20000 | [\[1\]](https://doi.org/10.1103/PhysRevE.93.022409) |
@@ -76,11 +76,14 @@ baseline in `results/`.
 
 ## Status
 
-Version 0.1.0: six problems, chosen for a range of size (three to six free
-parameters), noise (single-molecule promoters to hundreds of receptors), dynamics
-(transients, noise-driven switching, noise-driven cycles) and simulator (five SSA, one
-network-free). The plan is twenty to thirty problems and reference results from several
-tools.
+Version 0.2.0: twelve problems, chosen for a range of size (three to eight free parameters,
+seven species to 354), noise (single-molecule promoters to thirty thousand ligands), dynamics
+(transients, noise-driven switching, noise-driven and noise-resistant cycles, exponential
+aggregate growth), rate laws (mass action, and functional rate laws evaluated per event),
+simulator (nine SSA, three network-free) and cost (budgets from 2,000 to 20,000 simulations).
+Three free parameters are marked not identifiable, measured rather than assumed, so a method
+is also tested on whether it wastes budget on a direction carrying no information. The plan is
+twenty to thirty problems and reference results from several tools.
 
 What a version means is in [PROTOCOL.md](PROTOCOL.md#versioning): problem ids are permanent,
 a problem never changes in place, adding problems is a minor version, and changing a scoring
