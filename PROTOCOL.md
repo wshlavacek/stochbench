@@ -130,7 +130,7 @@ times to get the objective's noise there, then each parameter alone at half and 
 true value, and report the shift in units of that noise. A parameter that moves the
 objective by more than its noise in at least one direction is marked identifiable; one that
 does not is marked `"identifiable": false`, with the measured reason in its `note`, and is
-reported by a fit but never scored. Three of the collection's fifty-three free parameters
+reported by a fit but never scored. Three of the collection's sixty-three free parameters
 are in that second class. The measurement (six evaluations at the truth, `fit.smoothing`
 replicates each, chi-square against the committed `_SD` columns):
 
@@ -193,6 +193,16 @@ replicates each, chi-square against the committed `_SD` columns):
 | Dembo_JImmunol1978 | `koff` | 1628 | 4484 |
 | Dembo_JImmunol1978 | `kf` | 3451 | 2303 |
 | Dembo_JImmunol1978 | `kxf` | 655 | 528 |
+| Artyomov_PNAS2010 | `koffAg` | 218 | 56 |
+| Artyomov_PNAS2010 | `konCD_local` | 4 | 8 |
+| Artyomov_PNAS2010 | `koffCD` | 34 | 10 |
+| Artyomov_PNAS2010 | `konLck_local` | 4 | 14 |
+| Artyomov_PNAS2010 | `konLck1_local` | 1 | 4 |
+| Artyomov_PNAS2010 | `koffLck` | 27 | 7 |
+| Posner_MathBiosci1995 | `koff` | 9 | 41 |
+| Posner_MathBiosci1995 | `kf` | 539 | 555 |
+| Posner_MathBiosci1995 | `kxf` | 29 | 7 |
+| Posner_MathBiosci1995 | `jp` | 19 | 11 |
 
 Parameters whose leverage is ten to fifty where their siblings' is a thousand (`p2` in
 McKane_PhysRevLett2005, `kon2` in Yang_PhysRevE2008) are narrow directions of a steep
@@ -213,11 +223,21 @@ fired before CII collapsed. In each case the parameter stays free and a fit stil
 an estimate for it; the estimate is simply not scored, which is what makes these problems
 a test of whether a method wastes its budget on a direction that carries no information.
 
-A leverage of one or two is not zero but is close to it, and three parameters sit there:
+A leverage of one to four is not zero but is close to it, and several parameters sit there:
 `alpha_R` in Vilar_PNAS2002 (basal repressor transcription at 0.01 /h against an activated
 rate of 50 /h), `kp2` in Faeder_JImmunol2003 (crosslinking so fast that dimer formation is
-limited by ligand capture instead), and `k_RE` in Cortes_BiophysJ2017. They are scored,
-but a method is not expected to pin them tightly.
+limited by ligand capture instead), `k_RE` in Cortes_BiophysJ2017, and `konLck1_local` and
+`konCD_local` in Artyomov_PNAS2010. They are scored, but a method is not expected to pin
+them tightly.
+
+One thing the measurement caught is worth recording, because it would have been easy to
+misread. Artyomov_PNAS2010 first carried two observables that are identical here -- agonist
+pMHC bound to a TCR, and agonist pMHC in total, which coincide because a pMHC that loses its
+TCR is removed at once. Double-counting the same residuals doubled the objective's variance
+without adding information, and two of its parameters measured no leverage at all. Dropping
+the duplicate took the objective's noise from 21 to 3 and made every parameter identifiable.
+A free parameter that measures as inert is worth checking against the observables before it
+is believed.
 
 ## Reference fits
 

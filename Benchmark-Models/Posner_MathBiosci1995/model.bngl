@@ -1,0 +1,94 @@
+begin model
+#@model_id: Posner_MathBiosci1995
+#@title: Ring formation in bivalent ligand-bivalent receptor aggregation (Posner et al., 1995)
+#@description: |
+#  The same bivalent-ligand, bivalent-receptor system as Dembo_JImmunol1978, with
+#  the one thing that system forbids: a chain can close on itself. Two ligands and
+#  two receptors in a linear chain can join their free ends into a cyclic dimer at
+#  a rate jp, and the ring can open again. Rings are why the equivalent-site
+#  approximation breaks down, because a bond inside a ring is not equivalent to a
+#  bond in a chain, and they are the reason this is the only problem in the
+#  collection whose aggregates are not trees. The ring state is carried by the
+#  bond-site states u, c and g -- unbound, chain-bound, ring-bound -- so the
+#  ring-closure and ring-opening rules match a specific four-molecule arrangement
+#  rather than relying on the simulator to detect a cycle.
+#@reference: |
+#  Posner RG, Wofsy C, Goldstein B (1995). The kinetics of bivalent
+#  ligand-bivalent receptor aggregation: ring formation and the breakdown of the
+#  equivalent site approximation. Mathematical Biosciences 126:171-190.
+#  doi:10.1016/0025-5564(94)00045-2
+#@source: BNGL-Models/models/blbr_rings_posner1995 (rev f29cc7c)
+#
+# Benchmark adaptations (see problem.json): four rate constants are free via the
+# ``name name__FREE`` alias form -- capture, crosslinking, bond dissociation and
+# ring closure -- written directly as stochastic constants rather than derived
+# from the published macroscopic ones, so each is one search dimension. Their true
+# values are the published ones evaluated in the simulated subvolume, one percent
+# of a cell: kf = kon/(NA*V_sim) with kon = 1e6 /M/s, kxf = KxRT/RT*koff with
+# KxRT = 5, and jp = J2*koff with J2 = 100. Four of the six observables are kept;
+# free ligand and free ligand sites are dropped, since with 30,000 ligands against
+# 3,000 receptors they barely move. The published 3,000 s window is shortened to
+# the first 100 s, which is where the cyclic-dimer population is still forming;
+# beyond it the system is at equilibrium and a trajectory costs several times more.
+
+begin parameters
+  # Molecule counts in the simulated subvolume (one percent of a cell)
+  RT  3000   # molecules
+  LT  30000  # molecules
+
+  # Single-site stochastic rate constants
+  koff  koff__FREE  # /s              bond dissociation, chain or ring
+  kf    kf__FREE    # /(molecule*s)   capture of a free ligand arm
+  kxf   kxf__FREE   # /(molecule*s)   crosslinking to a second receptor
+
+  # Ring closure: the intramolecular step, first order because both ends are
+  # already in the same complex
+  jp  jp__FREE  # /s
+end parameters
+
+begin molecule types
+  # Bivalent ligand and bivalent receptor. The site states record what kind of
+  # bond a site is in: u unbound, c in a chain, g in a ring.
+  L(r~u~c~g,r~u~c~g)
+  R(l~u~c~g,l~u~c~g)
+end molecule types
+
+begin seed species
+  L(r~u,r~u)  LT  # molecules
+  R(l~u,l~u)  RT  # molecules
+end seed species
+
+begin observables
+  # Free receptor, both sites unbound
+  Species    Obs_Free_R        R(l~u,l~u)
+  # Total ligand-receptor bonds, chain and ring together
+  Molecules  Obs_Bonds         L(r!1).R(l!1)
+  # Free receptor sites on any receptor
+  Molecules  Obs_Free_R_sites  R(l~u)
+  # Cyclic dimers: two ligands and two receptors, every bond ring-bound
+  Species    Obs_Cyclic_Dimer  L(r~g!1,r~g!2).R(l~g!1,l~g!3).L(r~g!3,r~g!4).R(l~g!4,l~g!2)
+end observables
+
+begin reaction rules
+  # A free ligand binds a free receptor site
+  R_capture: L(r~u,r~u) + R(l~u) -> L(r~u,r~c!1).R(l~c!1)  kf
+
+  # A tethered ligand's second arm binds a free receptor site on a different
+  # complex; same-complex binding is blocked, so a ring never forms this way
+  R_crosslink: L(r~c!+,r~u) + R(l~u) -> L(r~c!+,r~c!1).R(l~c!1)  kxf
+
+  # Any chain bond breaks
+  R_dissoc: L(r~c!1).R(l~c!1) -> L(r~u) + R(l~u)  koff
+
+  # Ring closure and ring opening: the two-ligand, two-receptor chain closes into
+  # a cyclic dimer at jp, and any of its bonds breaking reopens it at koff
+  R_ring_close: L(r~u,r~c!1).R(l~c!1,l~c!2).L(r~c!2,r~c!3).R(l~c!3,l~u) -> \
+    L(r~g!4,r~g!1).R(l~g!1,l~g!2).L(r~g!2,r~g!3).R(l~g!3,l~g!4)  jp
+  R_ring_open: L(r~g!4,r~g!1).R(l~g!1,l~g!2).L(r~g!2,r~g!3).R(l~g!3,l~g!4) -> \
+    L(r~u,r~c!1).R(l~c!1,l~c!2).L(r~c!2,r~c!3).R(l~c!3,l~u)  koff
+end reaction rules
+end model
+
+begin actions
+  simulate({method=>"nf",suffix=>"nfr",t_start=>0,t_end=>100,n_steps=>50,gml=>2147483647})
+end actions

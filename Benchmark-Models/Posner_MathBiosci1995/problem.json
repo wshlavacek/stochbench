@@ -1,0 +1,62 @@
+{
+  "id": "Posner_MathBiosci1995",
+  "version": 1,
+  "title": "Ring formation in bivalent ligand-bivalent receptor aggregation (Posner et al., 1995)",
+  "reference": "Posner RG, Wofsy C, Goldstein B (1995). The kinetics of bivalent ligand-bivalent receptor aggregation: ring formation and the breakdown of the equivalent site approximation. Math Biosci 126:171-190. doi:10.1016/0025-5564(94)00045-2",
+  "source": "BNGL-Models/models/blbr_rings_posner1995 (rev f29cc7c)",
+  "model": "model.bngl",
+  "simulation": {
+    "method": "nf",
+    "suffix": "nfr",
+    "t_start": 0,
+    "t_end": 100,
+    "n_steps": 50
+  },
+  "observables": [
+    "Obs_Free_R",
+    "Obs_Bonds",
+    "Obs_Free_R_sites",
+    "Obs_Cyclic_Dimer"
+  ],
+  "parameters": {
+    "koff__FREE": {
+      "true": 0.01,
+      "low": 0.0001,
+      "high": 1.0,
+      "identifiable": true,
+      "note": "bond dissociation, /s; the same constant breaks a chain bond and reopens a ring"
+    },
+    "kf__FREE": {
+      "true": 1.66054e-07,
+      "low": 1.66054e-09,
+      "high": 1.66054e-05,
+      "identifiable": true,
+      "note": "capture of a free ligand arm by a free receptor site, /(molecule*s)"
+    },
+    "kxf__FREE": {
+      "true": 1.66667e-05,
+      "low": 1.66667e-07,
+      "high": 0.00166667,
+      "identifiable": true,
+      "note": "crosslinking of a tethered ligand to a second receptor, /(molecule*s)"
+    },
+    "jp__FREE": {
+      "true": 1.0,
+      "low": 0.01,
+      "high": 100.0,
+      "identifiable": true,
+      "note": "ring closure, /s; first order because both ends are already in one complex, and the only parameter in the collection that acts on aggregate topology rather than on a bond count"
+    }
+  },
+  "data": {
+    "file": "nfr.exp",
+    "replicates": 100,
+    "seed_offset": 1000000,
+    "sd_floor_fraction": 0.05
+  },
+  "fit": {
+    "budget_simulations": 2000,
+    "smoothing": 4
+  },
+  "notes": "The collection's only problem whose aggregates are not trees. Every other aggregation problem here blocks same-complex binding and so forbids cycles; this one adds an explicit ring-closure step, which is the mechanism the paper's title is about and the reason the equivalent-site approximation fails. That gives it a parameter unlike any other in the collection: jp is first order, acts on topology rather than on a bond count, and is visible almost entirely through one observable, the cyclic-dimer population. The other three constants it shares in form with Dembo_JImmunol1978 and Yang_PhysRevE2008, which is deliberate -- the three problems differ in exactly one structural feature each, so a method's results across them say which feature it is sensitive to. The window is the first 100 s of the published 3,000 s protocol: that is where the cyclic-dimer population is still forming, and a trajectory past it costs several times more for a flat mean."
+}

@@ -1,0 +1,136 @@
+begin model
+#@model_id: Artyomov_PNAS2010
+#@title: Coreceptor-assisted Lck delivery to the TCR (Artyomov et al., 2010)
+#@description: |
+#  A T-cell receptor, a peptide-MHC and a CD4 coreceptor can each bind the other
+#  two, so the three of them close a ring: TCR-pMHC, pMHC-CD4 and CD4-TCR. The
+#  coreceptor carries Lck, so the lifetime of that ring is how long Lck is held
+#  at an engaged receptor, and the paper's claim is that this delivery, rather
+#  than any change in TCR-pMHC affinity, is what coreceptor binding contributes.
+#  Each of the three bonds has a rule for forming across two separate complexes
+#  and a second rule for closing the ring within one complex at the higher
+#  per-chamber rate, and a ring can open at any of its three bonds.
+#@reference: |
+#  Artyomov MN, Lis M, Devadas S, Davis MM, Chakraborty AK (2010). CD4 and CD8
+#  binding to MHC molecules primarily acts to enhance Lck delivery. Proceedings
+#  of the National Academy of Sciences USA 107:16916-16921.
+#  doi:10.1073/pnas.1010568107
+#@source: BNGL-Models/models/lck_delivery_wellmixed_artyomov2010 (rev f29cc7c)
+#
+# Benchmark adaptations (see problem.json): six rate constants are free via the
+# ``name name__FREE`` alias form. Four of the model's constants are not free, and
+# three of those could not usefully be. koffEn governs dissociation of endogenous
+# pMHC, of which the published setup has none. kdiff is the surface hop rate and
+# enters no rule. kdestroy removes a doubly free MHC at 1e8 /s, a modelling device
+# rather than a rate. And kon_local, the TCR-pMHC association rate, is inert in
+# this parameterization for a reason worth stating: the agonist pMHC start already
+# engaged, endogenous pMHC are absent, and kdestroy removes a pMHC the instant it
+# loses its TCR, so no free pMHC ever exists to associate. The committed data show
+# it directly -- agonist pMHC bound to TCR equals total agonist pMHC at every
+# sampling time, to the last digit. The four rules carrying kon_local therefore
+# never fire, and making it free would put a dimension in the search that no data
+# could ever constrain. For the same reason only three observables are kept: the
+# source's AgMHC_total is identical to AgMHC_on_TCR here, not merely close.
+# The published protocol is otherwise kept unchanged: 250 s from the stated
+# initial state, sampled every second. Per-chamber bimolecular constants are
+# converted to the mean-field limit by dividing by the chamber count, as in the
+# source.
+
+begin parameters
+  n_chambers  1e4  # chambers in the 1 square micron contact
+
+  # TCR-pMHC bond
+  kon_local  150              # /s   per chamber (inert here; see the header)
+  koffAg     koffAg__FREE     # /s   agonist peptide
+  koffEn     20               # /s   endogenous peptide (none present; fixed)
+
+  # pMHC-coreceptor bond
+  konCD_local  konCD_local__FREE  # /s   per chamber
+  koffCD       koffCD__FREE       # /s
+
+  # Coreceptor-TCR bond, the one that carries Lck
+  konLck_local   konLck_local__FREE   # /s   per chamber, with MHC involved
+  konLck1_local  konLck1_local__FREE  # /s   per chamber, with no MHC involved
+  koffLck        koffLck__FREE        # /s
+
+  # Fixed model devices
+  kdiff     50   # /s   surface hop rate; enters no rule
+  kdestroy  1e8  # /s   loss of an MHC with both sites free
+
+  # Initial counts
+  count_ag   10   # molecules  agonist pMHC, pre-bound to TCR
+  count_en   0    # molecules  endogenous pMHC
+  count_tcr  200  # molecules
+  count_cd4  100  # molecules
+
+  # Mean-field limit of a per-chamber bimolecular constant
+  kon       kon_local/n_chambers
+  konCD     konCD_local/n_chambers
+  konLck    konLck_local/n_chambers
+  konLck1   konLck1_local/n_chambers
+end parameters
+
+begin molecule types
+  MHC(t,c,p~ag~en)
+  TCR(m,c,p~p0)
+  CD4(m,t,lck~basal)
+end molecule types
+
+begin seed species
+  MHC(t!1,c,p~ag).TCR(m!1,c,p~p0)  count_ag   # agonist, seeded already engaged
+  MHC(t,c,p~en)                    count_en
+  TCR(m,c,p~p0)                    count_tcr
+  CD4(m,t,lck~basal)               count_cd4
+end seed species
+
+begin observables
+  # Agonist pMHC engaged by a TCR. Every agonist pMHC is engaged at all times
+  # here, so this is also the total; the source's separate total observable would
+  # be an exact duplicate.
+  Molecules AgMHC_on_TCR  MHC(t!1,p~ag).TCR(m!1)
+  # The closed TCR-pMHC-CD4 ring: the state in which Lck is delivered
+  Molecules Ring          MHC(t!1,c!2).TCR(m!1,c!3).CD4(t!3,m!2)
+  # Coreceptor engaged by neither partner
+  Molecules CD4_free      CD4(m,t)
+end observables
+
+begin reaction rules
+  # An MHC with both sites free is removed
+  mhc_lost: MHC(t,c) -> 0  kdestroy
+
+  # TCR-pMHC bond: across two complexes, then the ring-closing form at the
+  # higher per-chamber rate
+  tcr_mhc_on: MHC(t,c) + TCR(m,c) -> MHC(t!1,c).TCR(m!1,c)  kon
+  tcr_mhc_on_mhc_cd: MHC(t,c!1).CD4(m!1,t) + TCR(m,c) -> MHC(t!2,c!1).CD4(m!1,t).TCR(m!2,c)  kon
+  tcr_mhc_on_tcr_cd: MHC(t,c) + TCR(m,c!1).CD4(t!1,m) -> MHC(t!2,c).TCR(m!2,c!1).CD4(t!1,m)  kon
+  tcr_mhc_close: MHC(t,c!2).TCR(m,c!1).CD4(t!1,m!2) -> MHC(t!3,c!2).TCR(m!3,c!1).CD4(t!1,m!2)  kon_local
+  tcr_mhc_off_ag: TCR(m!1).MHC(t!1,p~ag) -> TCR(m) + MHC(t,p~ag)  koffAg
+  tcr_mhc_off_en: TCR(m!1).MHC(t!1,p~en) -> TCR(m) + MHC(t,p~en)  koffEn
+
+  # Coreceptor-TCR bond, the Lck-carrying one
+  tcr_cd_on: TCR(c,m) + CD4(t,m) -> TCR(c!1,m).CD4(t!1,m)  konLck1
+  tcr_cd_on_via_mhc: TCR(c,m!1).MHC(t!1,c) + CD4(t,m) -> TCR(c!2,m!1).MHC(t!1,c).CD4(t!2,m)  konLck
+  tcr_cd_on_cd_mhc: TCR(c,m) + CD4(t,m!1).MHC(c!1,t) -> TCR(c!2,m).CD4(t!2,m!1).MHC(c!1,t)  konLck
+  tcr_cd_close: TCR(m!2,c).CD4(t,m!1).MHC(c!1,t!2) -> TCR(m!2,c!3).CD4(t!3,m!1).MHC(c!1,t!2)  konLck_local
+  tcr_cd_off_ring: TCR(c!1,m!2).MHC(t!2).CD4(t!1) -> TCR(c,m!2).MHC(t!2) + CD4(t)  koffLck
+  tcr_cd_off: TCR(c!1,m).CD4(t!1) -> TCR(c,m) + CD4(t)  koffLck
+
+  # pMHC-coreceptor bond
+  mhc_cd_on: MHC(c,t) + CD4(m,t) -> MHC(c!1,t).CD4(m!1,t)  konCD
+  mhc_cd_on_mhc_tcr: MHC(c,t!1).TCR(m!1,c) + CD4(m,t) -> MHC(c!2,t!1).TCR(m!1,c).CD4(m!2,t)  konCD
+  mhc_cd_on_cd_tcr: MHC(c,t) + CD4(m,t!1).TCR(c!1,m) -> MHC(c!2,t).CD4(m!2,t!1).TCR(c!1,m)  konCD
+  mhc_cd_close: MHC(t!2,c).CD4(m,t!1).TCR(c!1,m!2) -> MHC(t!2,c!3).CD4(m!3,t!1).TCR(c!1,m!2)  konCD_local
+  mhc_cd_off: MHC(c!1).CD4(m!1) -> MHC(c) + CD4(m)  koffCD
+
+  # A closed ring can open at any of its three bonds
+  ring_open_tcr_mhc_ag: MHC(t!1,c!3,p~ag).TCR(m!1,c!2).CD4(t!2,m!3) -> MHC(t,c!3,p~ag).TCR(m,c!2).CD4(t!2,m!3)  koffAg
+  ring_open_tcr_mhc_en: MHC(t!1,c!3,p~en).TCR(m!1,c!2).CD4(t!2,m!3) -> MHC(t,c!3,p~en).TCR(m,c!2).CD4(t!2,m!3)  koffEn
+  ring_open_tcr_cd: MHC(t!1,c!3).TCR(m!1,c!2).CD4(t!2,m!3) -> MHC(t!1,c!3).TCR(m!1,c).CD4(t,m!3)  koffLck
+  ring_open_mhc_cd: MHC(t!1,c!3).TCR(m!1,c!2).CD4(t!2,m!3) -> MHC(t!1,c).TCR(m!1,c!2).CD4(t!2,m)  koffCD
+end reaction rules
+end model
+
+begin actions
+  generate_network({overwrite=>1})
+  simulate({method=>"ssa",suffix=>"ssa",t_start=>0,t_end=>250,n_steps=>250})
+end actions
