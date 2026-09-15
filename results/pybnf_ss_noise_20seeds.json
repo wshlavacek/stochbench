@@ -1,7 +1,7 @@
 [
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00025153719042864543,
@@ -178,7 +178,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00023284987262886625,
@@ -319,7 +319,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00018174818865094317,
@@ -478,7 +478,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00021217159728016268,
@@ -655,7 +655,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00021025242686316148,
@@ -787,7 +787,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0002489895017612048,
@@ -955,7 +955,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0004316417028299283,
@@ -1123,7 +1123,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0002807700477741148,
@@ -1318,7 +1318,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0007019765459243886,
@@ -1513,7 +1513,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0002862810877217068,
@@ -1663,7 +1663,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 45.715331930020646,
@@ -1777,7 +1777,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 46.07409863476055,
@@ -1873,7 +1873,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 54.9319204174557,
@@ -2059,7 +2059,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 56.482678557455365,
@@ -2191,7 +2191,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 53.61225797294008,
@@ -2323,7 +2323,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 45.51083407253474,
@@ -2464,7 +2464,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 81.36669177071124,
@@ -2560,7 +2560,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 49.67313364025342,
@@ -2737,7 +2737,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 76.8704053653246,
@@ -2860,7 +2860,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 70.10619530392898,
@@ -3001,7 +3001,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09321846918731722,
@@ -3160,7 +3160,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09672966003482553,
@@ -3346,7 +3346,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09016358409466252,
@@ -3568,7 +3568,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09143334175345767,
@@ -3736,7 +3736,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.1176608777111088,
@@ -3940,7 +3940,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09717576491827845,
@@ -4135,7 +4135,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.21088778129788419,
@@ -4312,7 +4312,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09171484587517323,
@@ -4489,7 +4489,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.10046285451508087,
@@ -4720,7 +4720,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.18346598729821675,
@@ -4879,7 +4879,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00017097312828323824,
@@ -5169,7 +5169,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0014319290236138181,
@@ -5437,7 +5437,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00017716047259698576,
@@ -5705,7 +5705,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00020825330765830046,
@@ -5951,7 +5951,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00020286395167714482,
@@ -6208,7 +6208,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0008551518315760418,
@@ -6432,7 +6432,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.000580012514696686,
@@ -6645,7 +6645,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0006695233133249294,
@@ -6869,7 +6869,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0004808961006441008,
@@ -7148,7 +7148,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00012840798357050247,
@@ -7295,7 +7295,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00023701680487915816,
@@ -7472,7 +7472,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0003338859623294847,
@@ -7667,7 +7667,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00016812332681875208,
@@ -7781,7 +7781,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00038201292280070433,
@@ -8003,7 +8003,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00024913457860181005,
@@ -8171,7 +8171,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00024204891254480434,
@@ -8348,7 +8348,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00047322386928554897,
@@ -8507,7 +8507,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0002202114912862841,
@@ -8756,7 +8756,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0002531214195676528,
@@ -8951,7 +8951,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00016584066876027906,
@@ -9173,7 +9173,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00036433833276790754,
@@ -9341,7 +9341,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00017334622433933802,
@@ -9500,7 +9500,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00018420869716812574,
@@ -9659,7 +9659,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0001869534378779318,
@@ -9863,7 +9863,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0002665026914062264,
@@ -9995,7 +9995,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00016963923942811966,
@@ -10199,7 +10199,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00033964404826427843,
@@ -10385,7 +10385,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0002818633835756163,
@@ -10535,7 +10535,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00020305166878562786,
@@ -10667,7 +10667,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00020824887278476253,
@@ -10844,7 +10844,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00019379855372327122,
@@ -11030,7 +11030,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0002203010825458803,
@@ -11180,7 +11180,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00024898006758495016,
@@ -11321,7 +11321,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0002136665842138459,
@@ -11426,7 +11426,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00027464469027429095,
@@ -11639,7 +11639,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00036098208751529447,
@@ -11798,7 +11798,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00023030224926680754,
@@ -11912,7 +11912,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0001632450102253647,
@@ -12080,7 +12080,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 57.57794101279714,
@@ -12275,7 +12275,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 36.15707630319044,
@@ -12470,7 +12470,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 46.90488893075998,
@@ -12764,7 +12764,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 41.90816797101305,
@@ -12896,7 +12896,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.000373688248469682,
@@ -13046,7 +13046,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00020571332009952265,
@@ -13196,7 +13196,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 46.39320066342899,
@@ -13409,7 +13409,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 48.1767590555446,
@@ -13532,7 +13532,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 43.92198689731846,
@@ -13772,7 +13772,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 39.677659013647286,
@@ -13949,7 +13949,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 57.78728443553971,
@@ -14108,7 +14108,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 45.62089546644901,
@@ -14303,7 +14303,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 64.93089319665485,
@@ -14462,7 +14462,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 44.57523161777103,
@@ -14612,7 +14612,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 43.54146883039008,
@@ -14807,7 +14807,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 47.70016032082336,
@@ -14966,7 +14966,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 55.00477668699021,
@@ -15098,7 +15098,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 52.337028163093514,
@@ -15248,7 +15248,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 55.34207106322071,
@@ -15488,7 +15488,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 36.05371718322727,
@@ -15602,7 +15602,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 36.3868727827969,
@@ -15770,7 +15770,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 58.271851471747894,
@@ -15893,7 +15893,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 40.58242870798333,
@@ -16079,7 +16079,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 69.60319376186456,
@@ -16175,7 +16175,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 73.06858365275839,
@@ -16307,7 +16307,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 48.744710964879985,
@@ -16448,7 +16448,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 49.86112203847213,
@@ -16634,7 +16634,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 72.52820900828137,
@@ -16811,7 +16811,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 53.67598223350931,
@@ -16943,7 +16943,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 67.9723851516976,
@@ -17129,7 +17129,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 40.921829233404594,
@@ -17288,7 +17288,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0010251020151175608,
@@ -17501,7 +17501,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 42.357966734490795,
@@ -17687,7 +17687,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00027198534174835225,
@@ -17867,7 +17867,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.004518238609640656,
@@ -18102,7 +18102,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0003021805801497991,
@@ -18337,7 +18337,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0008222231619707105,
@@ -18506,7 +18506,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.002371522020290399,
@@ -18664,7 +18664,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0012919537422026344,
@@ -18833,7 +18833,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00028787382763311196,
@@ -19013,7 +19013,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0006016721596606434,
@@ -19237,7 +19237,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.000562628362149723,
@@ -19527,7 +19527,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 9.40026213568669e-05,
@@ -19762,7 +19762,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0010341094807358219,
@@ -19942,7 +19942,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0011082990772419091,
@@ -20122,7 +20122,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0010898152101845341,
@@ -20291,7 +20291,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00014241483075554405,
@@ -20427,7 +20427,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0005726193258528446,
@@ -20662,7 +20662,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0002437257752531271,
@@ -20886,7 +20886,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.003249563119547262,
@@ -21077,7 +21077,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.001015006415645991,
@@ -21334,7 +21334,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0006372861706430363,
@@ -21481,7 +21481,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0017993889317037257,
@@ -21683,7 +21683,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.09361049260869114,
@@ -21852,7 +21852,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0001971838742169466,
@@ -22043,7 +22043,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.04126413810038777,
@@ -22201,7 +22201,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.001090249068691624,
@@ -22458,7 +22458,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 8.195056292948582e-05,
@@ -22627,7 +22627,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0011875807807443957,
@@ -22862,7 +22862,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00019226735993188376,
@@ -23097,7 +23097,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0002713742055910925,
@@ -23310,7 +23310,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.000926576230937232,
@@ -23435,7 +23435,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09683496602691292,
@@ -23657,7 +23657,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.14594354232444795,
@@ -23780,7 +23780,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09064768104978065,
@@ -23903,7 +23903,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09712063949699211,
@@ -24125,7 +24125,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.10233870665214824,
@@ -24266,7 +24266,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09315115841563497,
@@ -24443,7 +24443,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.0895737552309417,
@@ -24593,7 +24593,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09344221490027967,
@@ -24743,7 +24743,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.10646816587715603,
@@ -24947,7 +24947,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.08679299599916694,
@@ -25187,7 +25187,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.0920431341918624,
@@ -25364,7 +25364,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.10102167266199237,
@@ -25568,7 +25568,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.1141950504101192,
@@ -25700,7 +25700,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09836309475499276,
@@ -25859,7 +25859,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09610650632391089,
@@ -26000,7 +26000,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.10016173259820166,
@@ -26231,7 +26231,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09156389314398428,
@@ -26381,7 +26381,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.07579665637567219,
@@ -26567,7 +26567,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.15014825496370524,
@@ -26753,7 +26753,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.11245413737197256,
@@ -26930,7 +26930,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09436494978922046,
@@ -27107,7 +27107,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.08441666135100205,
@@ -27248,7 +27248,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09212030421512392,
@@ -27416,7 +27416,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.12496620176356224,
@@ -27593,7 +27593,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09371261146445733,
@@ -27752,7 +27752,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.0920131355282256,
@@ -27947,7 +27947,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09487355894186038,
@@ -28133,7 +28133,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.10776132254759165,
@@ -28319,7 +28319,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.17592755776279467,
@@ -28505,7 +28505,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.11059708795417209,
@@ -28628,7 +28628,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0002421741058195397,
@@ -28827,7 +28827,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00021424560242781215,
@@ -28999,7 +28999,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.000171699317734539,
@@ -29135,7 +29135,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00023966288381680064,
@@ -29352,7 +29352,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00030018305811684877,
@@ -29542,7 +29542,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0002882643392596857,
@@ -29696,7 +29696,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00018579407878465388,
@@ -29859,7 +29859,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0002057281126171546,
@@ -30031,7 +30031,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00024460582358253003,
@@ -30221,7 +30221,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0003129710693333018,
@@ -30420,7 +30420,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0003610825564734008,
@@ -30565,7 +30565,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0001739317872498168,
@@ -30719,7 +30719,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0005504453296567874,
@@ -30882,7 +30882,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00025276884029945855,
@@ -31090,7 +31090,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0001641029981845844,
@@ -31271,7 +31271,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00018724096439622139,
@@ -31398,7 +31398,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 53.86919775640135,
@@ -31552,7 +31552,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 59.71675789401031,
@@ -31670,7 +31670,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 36.81714423750428,
@@ -31869,7 +31869,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 39.89129284527091,
@@ -31987,7 +31987,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0003272055968170862,
@@ -32105,7 +32105,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00022271756869254438,
@@ -32232,7 +32232,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0003087130196866413,
@@ -32413,7 +32413,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00031597144131895416,
@@ -32594,7 +32594,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 44.437392255804525,
@@ -32739,7 +32739,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 42.815324436730116,
@@ -32884,7 +32884,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 44.117403793699914,
@@ -33137,7 +33137,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 54.37890424088248,
@@ -33255,7 +33255,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 57.343724846353034,
@@ -33436,7 +33436,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 45.781652280928725,
@@ -33545,7 +33545,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 43.24545533675849,
@@ -33690,7 +33690,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 32.39818339372349,
@@ -33898,7 +33898,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 49.75710604962001,
@@ -34070,7 +34070,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 36.73129888412501,
@@ -34260,7 +34260,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 50.344361792582056,
@@ -34459,7 +34459,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 34.6363399326715,
@@ -34613,7 +34613,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 34.05346543229179,
@@ -34776,7 +34776,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 44.0967237071186,
@@ -34930,7 +34930,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 75.1598148337593,
@@ -35102,7 +35102,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00036734578129789356,
@@ -35330,7 +35330,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 62.27412756060259,
@@ -35484,7 +35484,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0006078695103369905,
@@ -35767,7 +35767,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00015976597655162515,
@@ -35984,7 +35984,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0006087422579689557,
@@ -36267,7 +36267,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.002624349144769926,
@@ -36495,7 +36495,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00018396423846863197,
@@ -36712,7 +36712,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00019769804916551368,
@@ -36940,7 +36940,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0057479010124409325,
@@ -37124,7 +37124,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00028853554626294295,
@@ -37363,7 +37363,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00046046910793179347,
@@ -37547,7 +37547,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00046863629915878187,
@@ -37797,7 +37797,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.009095322491643805,
@@ -37937,7 +37937,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.000700950414434817,
@@ -38154,7 +38154,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0004571078538286595,
@@ -38338,7 +38338,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.01174618148854686,
@@ -38555,7 +38555,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00017989230333281724,
@@ -38772,7 +38772,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.002291584370938553,
@@ -38967,7 +38967,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.002731667161868822,
@@ -39162,7 +39162,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.009461255473356914,
@@ -39357,7 +39357,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0004905346626258176,
@@ -39497,7 +39497,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.10413079708818467,
@@ -39732,7 +39732,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.10050173556272336,
@@ -39895,7 +39895,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09429948854482353,
@@ -40049,7 +40049,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.10198735833498261,
@@ -40275,7 +40275,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.14698930149356348,
@@ -40429,7 +40429,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.10246190530346468,
@@ -40646,7 +40646,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.15511725074244123,
@@ -40746,7 +40746,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09057321528354824,
@@ -40909,7 +40909,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.10750768837275879,
@@ -41099,7 +41099,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.14497941843910514,
@@ -41271,7 +41271,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.1112721760974064,
@@ -41425,7 +41425,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09525566143231773,
@@ -41597,7 +41597,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09468630103875701,
@@ -41814,7 +41814,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09814253470359613,
@@ -42004,7 +42004,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.10819074417619699,
@@ -42185,7 +42185,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.08753922134161579,
@@ -42393,7 +42393,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.0889873205650178,
@@ -42565,7 +42565,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09322599273889928,
@@ -42782,7 +42782,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.11059708795417209,
@@ -42891,7 +42891,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.2228124902957871,
@@ -43063,7 +43063,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00047736919137045296,
@@ -43217,7 +43217,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00033187606836994934,
@@ -43353,7 +43353,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0001820652818302378,
@@ -43489,7 +43489,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0002499583470315279,
@@ -43706,7 +43706,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00023226916337020943,
@@ -43869,7 +43869,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0003305638418501228,
@@ -44041,7 +44041,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0003207783153632722,
@@ -44240,7 +44240,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00035221711867740855,
@@ -44421,7 +44421,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00016931448089582525,
@@ -44611,7 +44611,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00040529556773757404,
@@ -44729,7 +44729,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00031771907315432125,
@@ -44910,7 +44910,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00028617103400082824,
@@ -45073,7 +45073,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0002584690390219021,
@@ -45227,7 +45227,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00034946530383525077,
@@ -45426,7 +45426,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00032482558349760835,
@@ -45598,7 +45598,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00015522114873801074,
@@ -45743,7 +45743,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 48.305772282871786,
@@ -45870,7 +45870,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 51.73228435309314,
@@ -45970,7 +45970,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 37.60381728013601,
@@ -46097,7 +46097,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 39.46741775377407,
@@ -46314,7 +46314,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00026993826762873195,
@@ -46459,7 +46459,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0004252360456619432,
@@ -46613,7 +46613,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.0005142861896944484,
@@ -46785,7 +46785,7 @@
  },
  {
   "problem": "Shahrezaei_PNAS2008",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k0__FREE": 0.00044900909181095174,
@@ -46912,7 +46912,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 55.26857060007612,
@@ -47057,7 +47057,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 56.19506958921505,
@@ -47193,7 +47193,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 53.804018997591285,
@@ -47302,7 +47302,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 38.351546020237784,
@@ -47411,7 +47411,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 59.52422546311529,
@@ -47655,7 +47655,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 48.04478650854313,
@@ -47872,7 +47872,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 44.4246157649699,
@@ -48089,7 +48089,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 59.57006693825575,
@@ -48216,7 +48216,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 54.55061585533506,
@@ -48370,7 +48370,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 47.490987931696374,
@@ -48542,7 +48542,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 37.504575773369695,
@@ -48750,7 +48750,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 34.75346380908563,
@@ -48868,7 +48868,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 43.0859184771588,
@@ -49022,7 +49022,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 68.25050409967389,
@@ -49194,7 +49194,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 37.45136120196132,
@@ -49357,7 +49357,7 @@
  },
  {
   "problem": "Lin_PhysRevE2016",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "B__FREE": 47.38440601148504,
@@ -49529,7 +49529,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00041869792635094327,
@@ -49735,7 +49735,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00013818549576878427,
@@ -49985,7 +49985,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0010656156647835626,
@@ -50202,7 +50202,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0017101350327092064,
@@ -50463,7 +50463,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00013978348774116824,
@@ -50658,7 +50658,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0001379492472426387,
@@ -50864,7 +50864,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00030274036707552565,
@@ -51070,7 +51070,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.002898585523461075,
@@ -51298,7 +51298,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00020886937331499134,
@@ -51559,7 +51559,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0005663742322856123,
@@ -51743,7 +51743,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.00023191271578364432,
@@ -51949,7 +51949,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.011578150417395143,
@@ -52100,7 +52100,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0007366675944760333,
@@ -52317,7 +52317,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0004302244577947977,
@@ -52545,7 +52545,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0011436301769680252,
@@ -52729,7 +52729,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0021729699536547488,
@@ -52913,7 +52913,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0007243558825211065,
@@ -53119,7 +53119,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0009240336534696112,
@@ -53303,7 +53303,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.01828445982615005,
@@ -53476,7 +53476,7 @@
  },
  {
   "problem": "Munsky_Science2012",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "k_on_I__FREE": 0.0012904708170168662,
@@ -53605,7 +53605,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.10478780677844114,
@@ -53786,7 +53786,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09176605985590472,
@@ -54030,7 +54030,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09119627123203596,
@@ -54229,7 +54229,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.08723916654493237,
@@ -54455,7 +54455,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.11200318121529983,
@@ -54636,7 +54636,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.0971671927743196,
@@ -54844,7 +54844,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.1012985292118072,
@@ -55052,7 +55052,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.12292772478062022,
@@ -55206,7 +55206,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.1349310012131351,
@@ -55387,7 +55387,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.15272762575842594,
@@ -55568,7 +55568,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.10381321824181589,
@@ -55749,7 +55749,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.10056342283377856,
@@ -55894,7 +55894,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09565363283607754,
@@ -56102,7 +56102,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09248954523729265,
@@ -56310,7 +56310,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.15635713902267054,
@@ -56491,7 +56491,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09016270913369256,
@@ -56645,7 +56645,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09000309466473143,
@@ -56826,7 +56826,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.09665912949507112,
@@ -57043,7 +57043,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.11059708795417209,
@@ -57161,7 +57161,7 @@
  },
  {
   "problem": "McKane_PhysRevLett2005",
-  "collection_version": "0.1.0",
+  "collection_version": "0.1.0.dev0",
   "tool": "PyBNF",
   "estimate": {
    "b__FREE": 0.12355359132507494,
