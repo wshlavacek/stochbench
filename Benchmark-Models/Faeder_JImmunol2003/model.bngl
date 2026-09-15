@@ -1,0 +1,181 @@
+begin model
+#@model_id: Faeder_JImmunol2003
+#@title: Early FceRI-mediated signaling (Faeder et al., 2003)
+#@description: |
+#  A bivalent ligand crosslinks the IgE receptor FceRI into dimers; Lyn kinase
+#  associates with the receptor beta ITAM both constitutively, through its unique
+#  domain, and after phosphorylation, through its SH2 domain; the two Lyn
+#  populations transphosphorylate the beta and gamma ITAMs of the partner
+#  receptor in a dimer at different rates; Syk binds the phosphorylated gamma
+#  ITAM and is itself transphosphorylated on its linker and activation-loop
+#  sites, the activated form doing so faster. Nineteen rules generate 354 species
+#  and 3,680 reactions, which is the point: this is the collection's
+#  combinatorially large but still network-generable problem.
+#@reference: |
+#  Faeder JR, Hlavacek WS, Reischl I, Blinov ML, Metzger H, Redondo A, Wofsy C,
+#  Goldstein B (2003). Investigation of early events in FceRI-mediated signaling
+#  using a detailed mathematical model. Journal of Immunology 170:3769-3781.
+#  doi:10.4049/jimmunol.170.7.3769
+#@source: BNGL-Models/models/early_fceri_signaling_faeder2003 (rev f29cc7c)
+#
+# Benchmark adaptations (see problem.json): six rate constants are free via the
+# ``name name__FREE`` alias form, one for each stage of the cascade -- ligand
+# binding, receptor crosslinking, beta and gamma phosphorylation by
+# constitutively associated Lyn, Syk recruitment, and membrane dephosphorylation.
+# The other twenty stay at their published values. Six of the ten observables are
+# kept; the three conservation checks are dropped, since they are constant by
+# construction. The published protocol is a deterministic 600 s time course; this
+# is the same initial state simulated stochastically over the first 150 s, the
+# part of the window in which every observable is still moving, sampled every
+# 2.5 s. Initial populations are the published scaled counts for one cell.
+
+begin parameters
+  # Scaled initial populations for one cell
+  Lig_tot  6.0e3  # molecules
+  Rec_tot  4.0e2  # molecules
+  Lyn_tot  2.8e1  # molecules
+  Syk_tot  4.0e2  # molecules
+
+  # Ligand-receptor binding and receptor aggregation. Both reverse constants are
+  # zero in the published model: binding is irreversible on this timescale.
+  kp1  kp1__FREE  # /(molecule*s)
+  km1  0          # /s
+  kp2  kp2__FREE  # /(molecule*s)
+  km2  0          # /s
+
+  # Constitutive Lyn binding to unphosphorylated receptor beta
+  kpL  5e-2  # /(molecule*s)
+  kmL  20    # /s
+
+  # Lyn SH2 binding to phosphorylated receptor beta
+  kpLs  5e-2  # /(molecule*s)
+  kmLs  0.12  # /s
+
+  # Syk tandem-SH2 binding to phosphorylated receptor gamma, and the same rates
+  # again once Syk is phosphorylated
+  kpS   kpS__FREE  # /(molecule*s)
+  kmS   0.13       # /s
+  kpSs  6e-2       # /(molecule*s)
+  kmSs  0.13       # /s
+
+  # Phosphorylation by constitutively associated Lyn
+  pLb  pLb__FREE  # /s
+  pLg  pLg__FREE  # /s
+  pLS  30         # /s
+
+  # Phosphorylation by SH2-bound Lyn
+  pLbs  100  # /s
+  pLgs  3    # /s
+  pLSs  100  # /s
+
+  # Syk activation-loop transphosphorylation, by unactivated and activated Syk
+  pSS   100  # /s
+  pSSs  200  # /s
+
+  # Intrinsic dephosphorylation at the membrane and in the cytosol
+  dm  dm__FREE  # /s
+  dc  20        # /s
+end parameters
+
+begin molecule types
+  # Bivalent IgE-dimer ligand with two equivalent receptor-binding sites
+  Lig(l,l)
+  # Membrane-associated Lyn kinase with unique-domain and SH2 binding sites
+  Lyn(U,SH2)
+  # Syk kinase with tandem SH2, linker and activation-loop phosphorylation sites
+  Syk(tSH2,l~Y~pY,a~Y~pY)
+  # FceRI with ligand-binding alpha and ITAM-containing beta and gamma subunits
+  Rec(a,b~Y~pY,g~Y~pY)
+end molecule types
+
+begin seed species
+  Lig(l,l)           Lig_tot  # molecules
+  Lyn(U,SH2)         Lyn_tot  # molecules
+  Syk(tSH2,l~Y,a~Y)  Syk_tot  # molecules
+  Rec(a,b~Y,g~Y)     Rec_tot  # molecules
+end seed species
+
+begin observables
+  # Lyn not bound to a receptor
+  Molecules  Obs_Free_Lyn       Lyn(U,SH2)
+  # Receptors not in dimers: free plus singly ligated
+  Molecules  Obs_Rec_Monomer    Rec(a), Rec(a!1).Lig(l!1,l)
+  # Receptor molecules in ligand-crosslinked dimers
+  Molecules  Obs_Rec_Dimer      Rec.Rec
+  # Receptors with phosphorylated beta and gamma ITAMs
+  Molecules  Obs_Rec_BetaP      Rec(b~pY!?)
+  Molecules  Obs_Rec_GammaP     Rec(g~pY), Rec(g~pY!+)
+  # Receptors with Syk bound to phosphorylated gamma
+  Molecules  Obs_Rec_Syk        Rec(g~pY!1).Syk(tSH2!1)
+end observables
+
+begin reaction rules
+  # Ligand-receptor binding
+  R1_bind_ligand: Rec(a) + Lig(l,l) <-> Rec(a!1).Lig(l!1,l)  kp1, km1
+
+  # Receptor aggregation through the second site on a singly-bound ligand
+  R2_crosslink_receptor: \
+    Rec(a) + Lig(l,l!+) <-> Rec(a!2).Lig(l!2,l!+)  kp2, km2
+
+  # Constitutive Lyn-receptor binding through the Lyn unique domain
+  R3_bind_lyn_constitutive: \
+    Rec(b~Y) + Lyn(U,SH2) <-> Rec(b~Y!1).Lyn(U!1,SH2)  kpL, kmL
+
+  # Transphosphorylation of the partner receptor's beta and gamma by
+  # constitutively associated Lyn
+  R4_phosphorylate_beta_constitutive_lyn: \
+    Lig(l!1,l!2).Lyn(U!3,SH2).Rec(a!2,b~Y!3).Rec(a!1,b~Y) -> \
+    Lig(l!1,l!2).Lyn(U!3,SH2).Rec(a!2,b~Y!3).Rec(a!1,b~pY)  pLb
+  R5_phosphorylate_gamma_constitutive_lyn: \
+    Lig(l!1,l!2).Lyn(U!3,SH2).Rec(a!2,b~Y!3).Rec(a!1,g~Y) -> \
+    Lig(l!1,l!2).Lyn(U!3,SH2).Rec(a!2,b~Y!3).Rec(a!1,g~pY)  pLg
+
+  # Lyn SH2 binding to phosphorylated receptor beta, and the same two
+  # transphosphorylations by that population
+  R6_bind_lyn_sh2: \
+    Rec(b~pY) + Lyn(U,SH2) <-> Rec(b~pY!1).Lyn(U,SH2!1)  kpLs, kmLs
+  R7_phosphorylate_beta_sh2_lyn: \
+    Lig(l!1,l!2).Lyn(U,SH2!3).Rec(a!2,b~pY!3).Rec(a!1,b~Y) -> \
+    Lig(l!1,l!2).Lyn(U,SH2!3).Rec(a!2,b~pY!3).Rec(a!1,b~pY)  pLbs
+  R8_phosphorylate_gamma_sh2_lyn: \
+    Lig(l!1,l!2).Lyn(U,SH2!3).Rec(a!2,b~pY!3).Rec(a!1,g~Y) -> \
+    Lig(l!1,l!2).Lyn(U,SH2!3).Rec(a!2,b~pY!3).Rec(a!1,g~pY)  pLgs
+
+  # Syk tandem-SH2 binding to phosphorylated receptor gamma
+  R9_bind_syk: \
+    Rec(g~pY) + Syk(tSH2) <-> Rec(g~pY!1).Syk(tSH2!1)  kpS, kmS
+
+  # Transphosphorylation of the Syk linker by each Lyn population
+  R10_phosphorylate_syk_linker_constitutive_lyn: \
+    Lig(l!1,l!2).Lyn(U!3,SH2).Rec(a!2,b~Y!3).Rec(a!1,g~pY!4).Syk(tSH2!4,l~Y) -> \
+    Lig(l!1,l!2).Lyn(U!3,SH2).Rec(a!2,b~Y!3).Rec(a!1,g~pY!4).Syk(tSH2!4,l~pY)  pLS
+  R11_phosphorylate_syk_linker_sh2_lyn: \
+    Lig(l!1,l!2).Lyn(U,SH2!3).Rec(a!2,b~pY!3).Rec(a!1,g~pY!4).Syk(tSH2!4,l~Y) -> \
+    Lig(l!1,l!2).Lyn(U,SH2!3).Rec(a!2,b~pY!3).Rec(a!1,g~pY!4).Syk(tSH2!4,l~pY)  pLSs
+
+  # Syk activation-loop transphosphorylation, by unactivated and by activated Syk
+  R12_phosphorylate_syk_activation_loop_basal_syk: \
+    Lig(l!1,l!2).Syk(tSH2!3,a~Y).Rec(a!2,g~pY!3).Rec(a!1,g~pY!4).Syk(tSH2!4,a~Y) -> \
+    Lig(l!1,l!2).Syk(tSH2!3,a~Y).Rec(a!2,g~pY!3).Rec(a!1,g~pY!4).Syk(tSH2!4,a~pY)  pSS
+  R13_phosphorylate_syk_activation_loop_active_syk: \
+    Lig(l!1,l!2).Syk(tSH2!3,a~pY).Rec(a!2,g~pY!3).Rec(a!1,g~pY!4).Syk(tSH2!4,a~Y) -> \
+    Lig(l!1,l!2).Syk(tSH2!3,a~pY).Rec(a!2,g~pY!3).Rec(a!1,g~pY!4).Syk(tSH2!4,a~pY)  pSSs
+
+  # Dephosphorylation of the receptor ITAMs and of membrane-bound Syk, all at dm
+  R14_dephosphorylate_beta: Rec(b~pY) -> Rec(b~Y)  dm
+  R15_dephosphorylate_gamma: Rec(g~pY) -> Rec(g~Y)  dm
+  R16_dephosphorylate_membrane_syk_linker: Syk(tSH2!+,l~pY) -> Syk(tSH2!+,l~Y)  dm
+  R17_dephosphorylate_membrane_syk_activation_loop: \
+    Syk(tSH2!+,a~pY) -> Syk(tSH2!+,a~Y)  dm
+
+  # Dephosphorylation of cytosolic Syk
+  R18_dephosphorylate_cytosolic_syk_linker: Syk(tSH2,l~pY) -> Syk(tSH2,l~Y)  dc
+  R19_dephosphorylate_cytosolic_syk_activation_loop: \
+    Syk(tSH2,a~pY) -> Syk(tSH2,a~Y)  dc
+end reaction rules
+end model
+
+begin actions
+  generate_network({overwrite=>1})
+  simulate({method=>"ssa",suffix=>"ssa",t_start=>0,t_end=>150,n_steps=>60})
+end actions

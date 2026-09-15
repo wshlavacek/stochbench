@@ -1,0 +1,78 @@
+{
+  "id": "Faeder_JImmunol2003",
+  "version": 1,
+  "title": "Early FceRI-mediated signaling (Faeder et al., 2003)",
+  "reference": "Faeder JR, Hlavacek WS, Reischl I, Blinov ML, Metzger H, Redondo A, Wofsy C, Goldstein B (2003). Investigation of early events in FceRI-mediated signaling using a detailed mathematical model. J Immunol 170:3769-3781. doi:10.4049/jimmunol.170.7.3769",
+  "source": "BNGL-Models/models/early_fceri_signaling_faeder2003 (rev f29cc7c)",
+  "model": "model.bngl",
+  "simulation": {
+    "method": "ssa",
+    "suffix": "ssa",
+    "t_start": 0,
+    "t_end": 150,
+    "n_steps": 60
+  },
+  "observables": [
+    "Obs_Free_Lyn",
+    "Obs_Rec_Monomer",
+    "Obs_Rec_Dimer",
+    "Obs_Rec_BetaP",
+    "Obs_Rec_GammaP",
+    "Obs_Rec_Syk"
+  ],
+  "parameters": {
+    "kp1__FREE": {
+      "true": 1.32845238e-07,
+      "low": 1.3e-09,
+      "high": 1.3e-05,
+      "identifiable": true,
+      "note": "ligand-receptor binding, /(molecule*s)"
+    },
+    "kp2__FREE": {
+      "true": 0.25,
+      "low": 0.0025,
+      "high": 25.0,
+      "identifiable": true,
+      "note": "receptor crosslinking through the second ligand site, /(molecule*s)"
+    },
+    "pLb__FREE": {
+      "true": 30.0,
+      "low": 0.3,
+      "high": 3000.0,
+      "identifiable": true,
+      "note": "beta-ITAM phosphorylation by constitutively associated Lyn, /s"
+    },
+    "pLg__FREE": {
+      "true": 1.0,
+      "low": 0.01,
+      "high": 100.0,
+      "identifiable": true,
+      "note": "gamma-ITAM phosphorylation by constitutively associated Lyn, /s"
+    },
+    "kpS__FREE": {
+      "true": 0.06,
+      "low": 0.0006,
+      "high": 6.0,
+      "identifiable": true,
+      "note": "Syk tandem-SH2 binding to phosphorylated gamma, /(molecule*s)"
+    },
+    "dm__FREE": {
+      "true": 20.0,
+      "low": 0.2,
+      "high": 2000.0,
+      "identifiable": true,
+      "note": "membrane dephosphorylation, /s; acts on both ITAMs and on receptor-bound Syk, so it is the one free parameter that touches every phosphorylation observable"
+    }
+  },
+  "data": {
+    "file": "ssa.exp",
+    "replicates": 200,
+    "seed_offset": 1000000,
+    "sd_floor_fraction": 0.05
+  },
+  "fit": {
+    "budget_simulations": 4000,
+    "smoothing": 5
+  },
+  "notes": "The collection's combinatorially large problem: nineteen rules generate 354 species and 3,680 reactions, two orders of magnitude more species than any other network-based problem here, at a per-trajectory cost that still allows a fit in about ten minutes on one core. The six free parameters are one per stage of the cascade, so each has a distinct observable it moves first, but they act in series: a change in ligand binding or crosslinking propagates to every downstream observable, which is a different kind of coupling from the parallel promoters of Munsky_Science2012. Only 400 receptors and 28 Lyn molecules are present, so the phosphorylation observables are genuinely noisy despite the size of the network. The budget is 4,000 rather than 20,000 because a trajectory costs about 0.18 s."
+}

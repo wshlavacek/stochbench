@@ -96,8 +96,8 @@ version it was scored against.
   new id*, not an edit. (Text that changes nothing a fit sees, a typo in `notes` or a clearer
   `description`, is an ordinary edit.)
 * **Adding problems is a minor version.** The existing problems are untouched, so a result
-  reported against 0.1.0 still stands under 0.2.0; it just covers fewer problems than a result
-  reported against 0.2.0 does.
+  reported against an earlier minor version still stands under a later one; it just covers
+  fewer problems than a result reported against the later one does.
 * **Changing the scoring rules is a major version.** The rules above — the tolerances, what
   counts as a simulation, which statistic is primary — are part of what a version pins, in this
   file and in `protocol.py` together. A changed tolerance or cost rule is a major version even
@@ -108,7 +108,7 @@ version it was scored against.
 
 Two version numbers live alongside each other and mean different things. The **collection
 version** (`protocol.COLLECTION_VERSION`, the `version` in `CITATION.cff` and
-`src/python/pyproject.toml`, and the release tag, all equal) is the one above. The **definition
+`src/python/pyproject.toml`, all equal) is the one above. The **definition
 format version** (the `version` field in each `problem.json`, `protocol.FORMAT_VERSION`, 1
 today) is the schema those files are written in; a field added to the schema bumps it, and
 `load_problem` refuses a file it does not recognize rather than guessing.
@@ -118,17 +118,21 @@ scored a checkout other than the one it imports passes the version it actually s
 results file whose records do not agree on that field is reporting on two different
 collections and should be split.
 
-`docs/RELEASING.md` is the checklist for cutting a version and minting its DOI.
+The collection is not released. Versions carry a `.dev` suffix until one is worth citing,
+which means at least the problem count the collection is aiming for and reference results
+across it. The rule above does not wait on that: it governs the working collection now, and
+a record stamped `0.2.0.dev0` says exactly which state it was scored against.
 
 ## What the data determine
 
 Whether the data determine a parameter is measured, not guessed: score the truth several
 times to get the objective's noise there, then each parameter alone at half and double its
-true value, and report the shift in units of that noise. Every parameter of the current
-problems moves the objective by more than its noise in at least one direction, most by
-hundreds of standard deviations, so all are marked identifiable. The measurement (six
-evaluations at the truth, `fit.smoothing` replicates each, chi-square against the committed
-`_SD` columns):
+true value, and report the shift in units of that noise. A parameter that moves the
+objective by more than its noise in at least one direction is marked identifiable; one that
+does not is marked `"identifiable": false`, with the measured reason in its `note`, and is
+reported by a fit but never scored. Three of the collection's sixty-three free parameters
+are in that second class. The measurement (six evaluations at the truth, `fit.smoothing`
+replicates each, chi-square against the committed `_SD` columns):
 
 | problem | parameter | halved | doubled |
 |---|---|---:|---:|
@@ -157,6 +161,48 @@ evaluations at the truth, `fit.smoothing` replicates each, chi-square against th
 | Yang_PhysRevE2008 | `koff` | 1017 | 1142 |
 | Yang_PhysRevE2008 | `kon1` | 919 | 815 |
 | Yang_PhysRevE2008 | `kon2` | 20 | 49 |
+| Vilar_PNAS2002 | `alpha_R` | 2 | -1 |
+| Vilar_PNAS2002 | `beta_R` | 338 | 165 |
+| Vilar_PNAS2002 | `delta_R` | 203 | 285 |
+| Vilar_PNAS2002 | `gamma_C` | 10 | 12 |
+| Samoilov_PNAS2005 | `k_plus_1` | 54 | 136 |
+| Samoilov_PNAS2005 | `k_plus_2` | 10 | 23 |
+| Samoilov_PNAS2005 | `k_plus_3` | 146 | 730 |
+| Samoilov_PNAS2005 | `k_minus_1` | 11 | 5 |
+| Samoilov_PNAS2005 | `k_minus_2` | 0 | -1 |
+| Samoilov_PNAS2005 | `k_minus_3` | 1074 | 171 |
+| Samoilov_PNAS2005 | `k_21` | 10 | 2 |
+| Samoilov_PNAS2005 | `k_22` | 1 | 4 |
+| Faeder_JImmunol2003 | `kp1` | 183 | 344 |
+| Faeder_JImmunol2003 | `kp2` | -1 | 3 |
+| Faeder_JImmunol2003 | `pLb` | 8 | 2 |
+| Faeder_JImmunol2003 | `pLg` | 5 | 26 |
+| Faeder_JImmunol2003 | `kpS` | 14 | 25 |
+| Faeder_JImmunol2003 | `dm` | 55 | 44 |
+| Rubenstein_BiophysChem2007 | `lambda` | 230 | 963 |
+| Rubenstein_BiophysChem2007 | `d` | 1053 | 229 |
+| Rubenstein_BiophysChem2007 | `a` | 0 | 0 |
+| Rubenstein_BiophysChem2007 | `beta` | 8 | 230 |
+| Rubenstein_BiophysChem2007 | `b` | 0 | 63 |
+| Cortes_BiophysJ2017 | `k_R` | 41 | 7 |
+| Cortes_BiophysJ2017 | `k_RE` | 3 | 1 |
+| Cortes_BiophysJ2017 | `sigma` | 27 | 15 |
+| Cortes_BiophysJ2017 | `d_CI` | 0 | 0 |
+| Cortes_BiophysJ2017 | `alpha_yf` | 75 | 11 |
+| Cortes_BiophysJ2017 | `omega` | 14 | 196 |
+| Dembo_JImmunol1978 | `koff` | 1628 | 4484 |
+| Dembo_JImmunol1978 | `kf` | 3451 | 2303 |
+| Dembo_JImmunol1978 | `kxf` | 655 | 528 |
+| Artyomov_PNAS2010 | `koffAg` | 218 | 56 |
+| Artyomov_PNAS2010 | `konCD_local` | 4 | 8 |
+| Artyomov_PNAS2010 | `koffCD` | 34 | 10 |
+| Artyomov_PNAS2010 | `konLck_local` | 4 | 14 |
+| Artyomov_PNAS2010 | `konLck1_local` | 1 | 4 |
+| Artyomov_PNAS2010 | `koffLck` | 27 | 7 |
+| Posner_MathBiosci1995 | `koff` | 9 | 41 |
+| Posner_MathBiosci1995 | `kf` | 539 | 555 |
+| Posner_MathBiosci1995 | `kxf` | 29 | 7 |
+| Posner_MathBiosci1995 | `jp` | 19 | 11 |
 
 Parameters whose leverage is ten to fifty where their siblings' is a thousand (`p2` in
 McKane_PhysRevLett2005, `kon2` in Yang_PhysRevE2008) are narrow directions of a steep
@@ -164,6 +210,34 @@ landscape; parameters whose leverage is low in one direction (the slow promoter 
 transcription rates of Shahrezaei_PNAS2008, Lin_PhysRevE2016 and Munsky_Science2012) change
 a replicate mean by less than the noise in ten replicates when halved. Both are what a
 method has to cope with, and the first baseline shows they are where methods fail.
+
+Three parameters have no leverage in either direction and are therefore marked not
+identifiable. `k_minus_2` in Samoilov_PNAS2005 is unbinding from the reverse enzyme
+complex, which almost always proceeds to catalysis instead (`k_minus_3` is fifty times
+larger), so it is a two percent correction to that branch's Michaelis constant. `a` in
+Rubenstein_BiophysChem2007 clears whole aggregates at 0.047 /day against an elongation
+flux near 22 /day; it is identifiable in the published year-long protocol, not in the five
+days this problem samples. `d_CI` in Cortes_BiophysJ2017 sets how fast CI turns over, but
+within the 60 min window CI is set by how much the CII-activated establishment promoter
+fired before CII collapsed. In each case the parameter stays free and a fit still reports
+an estimate for it; the estimate is simply not scored, which is what makes these problems
+a test of whether a method wastes its budget on a direction that carries no information.
+
+A leverage of one to four is not zero but is close to it, and several parameters sit there:
+`alpha_R` in Vilar_PNAS2002 (basal repressor transcription at 0.01 /h against an activated
+rate of 50 /h), `kp2` in Faeder_JImmunol2003 (crosslinking so fast that dimer formation is
+limited by ligand capture instead), `k_RE` in Cortes_BiophysJ2017, and `konLck1_local` and
+`konCD_local` in Artyomov_PNAS2010. They are scored, but a method is not expected to pin
+them tightly.
+
+One thing the measurement caught is worth recording, because it would have been easy to
+misread. Artyomov_PNAS2010 first carried two observables that are identical here -- agonist
+pMHC bound to a TCR, and agonist pMHC in total, which coincide because a pMHC that loses its
+TCR is removed at once. Double-counting the same residuals doubled the objective's variance
+without adding information, and two of its parameters measured no leverage at all. Dropping
+the duplicate took the objective's noise from 21 to 3 and made every parameter identifiable.
+A free parameter that measures as inert is worth checking against the observables before it
+is believed.
 
 ## Reference fits
 

@@ -1,0 +1,77 @@
+{
+  "id": "Cortes_BiophysJ2017",
+  "version": 1,
+  "title": "Phage lambda lysis-lysogeny decision circuit (Cortes et al., 2017)",
+  "reference": "Cortes MG, Trinh JT, Zeng L, Balazsi G (2017). Late-arriving signals contribute less to cell-fate decisions. Biophys J 113:2110-2120. doi:10.1016/j.bpj.2017.09.012",
+  "source": "BNGL-Models/models/lambda_switch_cortes2017 (rev f29cc7c)",
+  "model": "model.bngl",
+  "simulation": {
+    "method": "nf",
+    "suffix": "nfr",
+    "t_start": 0,
+    "t_end": 60,
+    "n_steps": 120
+  },
+  "observables": [
+    "Obs_CI",
+    "Obs_Cro",
+    "Obs_CII",
+    "Obs_Q",
+    "Obs_DNA"
+  ],
+  "parameters": {
+    "k_R__FREE": {
+      "true": 1.1699,
+      "low": 0.0117,
+      "high": 116.99,
+      "identifiable": true,
+      "note": "transcription from pR, the cro-cII-Q operon, /min"
+    },
+    "k_RE__FREE": {
+      "true": 0.4938,
+      "low": 0.0049,
+      "high": 49.38,
+      "identifiable": true,
+      "note": "transcription from CII-activated pRE, the CI establishment promoter, /min"
+    },
+    "sigma__FREE": {
+      "true": 0.6371,
+      "low": 0.0637,
+      "high": 6.371,
+      "identifiable": true,
+      "note": "translation, /min, shared by all four proteins. One decade each side rather than two: the genome population is held in check only by CI and Cro repression, so a candidate with very little protein replicates without bound"
+    },
+    "d_CI__FREE": {
+      "true": 0.0849,
+      "low": 0.00085,
+      "high": 8.49,
+      "identifiable": false,
+      "note": "CI degradation, /min. not identifiable: measured leverage 0 sigma in both directions. CI is made only through CII-activated pRE and through pRM, which needs CI dimers already present, so within 60 min the CI trajectory is set by how much pRE fired while CII was up, not by how fast CI turns over. Reported by a fit but never scored."
+    },
+    "alpha_yf__FREE": {
+      "true": 2.9464,
+      "low": 0.029,
+      "high": 294.64,
+      "identifiable": true,
+      "note": "scale of the FtsH-saturable CII degradation alpha_yf/(1 + kappa_FtsH*[CII]), /min"
+    },
+    "omega__FREE": {
+      "true": 0.4045,
+      "low": 0.0405,
+      "high": 1.2,
+      "identifiable": true,
+      "note": "theta-mode genome replication from free pR, /min. The upper bound is set by the runaway, not by symmetry: unrepressed replication at 1.2/min already reaches the model's particle cap inside the window"
+    }
+  },
+  "data": {
+    "file": "nfr.exp",
+    "replicates": 200,
+    "seed_offset": 1000000,
+    "sd_floor_fraction": 0.05
+  },
+  "fit": {
+    "budget_simulations": 20000,
+    "smoothing": 10
+  },
+  "notes": "The collection's functional-rate-law problem under NFsim: eight of the nineteen rules carry a rate that is a function evaluated at every event, not a constant. Six are Hill expressions in a dimer concentration, each a protein count divided by a volume proxy that is itself a species growing under a self-catalytic clock rule, so the rate laws depend on the simulator's own state in a way a constant-rate model never does. This is what the problem is for: it exercises the simulator's function machinery rather than its aggregation machinery, unlike the two multivalent-binding network-free problems. Two difficulties for a fit. Obs_CII rises to about 70 molecules and then goes to zero and stays there, so the parameters that shape it (k_R, alpha_yf) are informed by a window of roughly twenty minutes and by nothing afterwards. And genome replication is self-limiting only through repression, so part of the search space produces runaway template growth; the model caps the particle count so those candidates fail rather than run forever, which means a method meets failed evaluations here, as it does not elsewhere in the collection."
+}

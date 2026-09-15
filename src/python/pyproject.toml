@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stochbench"
-version = "0.1.0"
+version = "0.2.0.dev0"
 description = "Problem definitions and scoring protocol of the stochbench collection"
 readme = "README.md"
 license = { text = "BSD-3-Clause" }

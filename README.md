@@ -20,16 +20,24 @@ The protocol (what a problem is, how the data are made, how a fit is scored) is 
 <!-- START OVERVIEW TABLE -->
 | Problem ID | Free parameters | Method | Observables | Sampling times | Data replicates | Budget (simulations) | References |
 |:---|---:|:---|---:|---:|---:|---:|:---|
+| [Artyomov_PNAS2010](Benchmark-Models/Artyomov_PNAS2010/) | 6 | ssa | 3 | 251 | 200 | 20000 | [\[1\]](https://doi.org/10.1073/pnas.1010568107) |
+| [Cortes_BiophysJ2017](Benchmark-Models/Cortes_BiophysJ2017/) | 6 | nf | 5 | 121 | 200 | 20000 | [\[1\]](https://doi.org/10.1016/j.bpj.2017.09.012) |
+| [Dembo_JImmunol1978](Benchmark-Models/Dembo_JImmunol1978/) | 3 | nf | 4 | 51 | 100 | 2000 | [\[1\]](https://doi.org/10.4049/jimmunol.121.1.345) |
+| [Faeder_JImmunol2003](Benchmark-Models/Faeder_JImmunol2003/) | 6 | ssa | 6 | 61 | 200 | 4000 | [\[1\]](https://doi.org/10.4049/jimmunol.170.7.3769) |
 | [Hlavacek_PNAS2001](Benchmark-Models/Hlavacek_PNAS2001/) | 4 | ssa | 3 | 61 | 200 | 20000 | [\[1\]](https://doi.org/10.1073/pnas.121172298) [\[2\]](https://doi.org/10.1006/bulm.2002.0306) |
 | [Lin_PhysRevE2016](Benchmark-Models/Lin_PhysRevE2016/) | 4 | ssa | 2 | 73 | 200 | 20000 | [\[1\]](https://doi.org/10.1103/PhysRevE.93.022409) |
 | [McKane_PhysRevLett2005](Benchmark-Models/McKane_PhysRevLett2005/) | 4 | ssa | 2 | 81 | 200 | 20000 | [\[1\]](https://doi.org/10.1103/PhysRevLett.94.218102) |
 | [Munsky_Science2012](Benchmark-Models/Munsky_Science2012/) | 6 | ssa | 6 | 301 | 200 | 20000 | [\[1\]](https://doi.org/10.1126/science.1216379) |
+| [Posner_MathBiosci1995](Benchmark-Models/Posner_MathBiosci1995/) | 4 | nf | 4 | 51 | 100 | 2000 | [\[1\]](https://doi.org/10.1016/0025-5564(94)00045-2) |
+| [Rubenstein_BiophysChem2007](Benchmark-Models/Rubenstein_BiophysChem2007/) | 5 | ssa | 3 | 101 | 200 | 2000 | [\[1\]](https://doi.org/10.1016/j.bpc.2006.09.011) |
+| [Samoilov_PNAS2005](Benchmark-Models/Samoilov_PNAS2005/) | 8 | ssa | 6 | 251 | 200 | 20000 | [\[1\]](https://doi.org/10.1073/pnas.0406841102) |
 | [Shahrezaei_PNAS2008](Benchmark-Models/Shahrezaei_PNAS2008/) | 4 | ssa | 3 | 61 | 200 | 20000 | [\[1\]](https://doi.org/10.1073/pnas.0803850105) |
+| [Vilar_PNAS2002](Benchmark-Models/Vilar_PNAS2002/) | 4 | ssa | 3 | 101 | 200 | 20000 | [\[1\]](https://doi.org/10.1073/pnas.092133899) |
 | [Yang_PhysRevE2008](Benchmark-Models/Yang_PhysRevE2008/) | 3 | nf | 3 | 61 | 100 | 4000 | [\[1\]](https://doi.org/10.1103/PhysRevE.78.031910) |
 <!-- END OVERVIEW TABLE -->
 
 The overview table is generated from the problem definitions by
-`python src/python/stochbench/overview.py`.
+`python -m stochbench.overview`.
 
 Every model comes from the curated
 [BNGL-Models](https://github.com/wshlavacek/BNGL-Models) collection, where each carries its
@@ -70,16 +78,23 @@ baseline in `results/`.
 
 ## Status
 
-Version 0.1.0: six problems, chosen for a range of size (three to six free
-parameters), noise (single-molecule promoters to hundreds of receptors), dynamics
-(transients, noise-driven switching, noise-driven cycles) and simulator (five SSA, one
-network-free). The plan is twenty to thirty problems and reference results from several
-tools.
+Version 0.2.0.dev0, unreleased: fourteen problems, chosen for a range of size (three to eight
+free parameters, seven species to 354), noise (single-molecule promoters to thirty thousand
+ligands), dynamics (transients, noise-driven switching, noise-driven and noise-resistant
+cycles, exponential aggregate growth), aggregate topology (trees, and one problem whose
+aggregates form rings), rate laws (mass action, and functional rate laws evaluated per
+event), simulator (ten SSA, four network-free) and cost (budgets from 2,000 to 20,000
+simulations).
+Three free parameters are marked not identifiable, measured rather than assumed, so a method
+is also tested on whether it wastes budget on a direction carrying no information. The plan is
+twenty to thirty problems and reference results from several tools.
 
-What a version means is in [PROTOCOL.md](PROTOCOL.md#versioning): problem ids are permanent,
-a problem never changes in place, adding problems is a minor version, and changing a scoring
-rule is a major one. Every fit record names the collection version it was scored against.
-[docs/RELEASING.md](docs/RELEASING.md) is the release checklist.
+Nothing is released yet, and the version carries `.dev` to say so. The rule for what a
+version *means* is in [PROTOCOL.md](PROTOCOL.md#versioning) and is in force regardless:
+problem ids are permanent, a problem never changes in place, adding problems is a minor
+version, changing a scoring rule is a major one, and every fit record names the collection
+version it was scored against. That is what makes a result from today comparable later; it
+needs no release to work.
 
 ## License
 
@@ -90,10 +105,7 @@ publication it implements, to which different terms may apply.
 
 ## How to cite
 
-A publication describing the collection is in preparation. Until then, cite the released
-version you used (see [CITATION.cff](CITATION.cff)), and say which one: a result is only
-comparable with another scored against the same version.
-
-Releases are archived on Zenodo, which issues a DOI for each one and a concept DOI resolving
-to the newest. Both go here and in `CITATION.cff` once the first release is deposited; see
-[docs/RELEASING.md](docs/RELEASING.md).
+There is no release to cite yet. Cite the repository and the commit you used (see
+[CITATION.cff](CITATION.cff)), and say which: a result is only comparable with another scored
+against the same state of the collection, which is why every fit record carries a
+`collection_version`. A publication describing the collection is in preparation.

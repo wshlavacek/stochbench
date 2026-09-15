@@ -1,0 +1,61 @@
+{
+  "id": "Vilar_PNAS2002",
+  "version": 1,
+  "title": "Noise-resistant circadian oscillator (Vilar et al., 2002)",
+  "reference": "Vilar JMG, Kueh HY, Barkai N, Leibler S (2002). Mechanisms of noise-resistance in genetic oscillators. Proc Natl Acad Sci USA 99:5988-5992. doi:10.1073/pnas.092133899",
+  "source": "BNGL-Models/models/noise_resistant_circadian_oscillator_vilar2002 (rev f29cc7c, 2026-09-14)",
+  "model": "model.bngl",
+  "simulation": {
+    "method": "ssa",
+    "suffix": "ssa",
+    "t_start": 0,
+    "t_end": 100,
+    "n_steps": 100
+  },
+  "observables": [
+    "Obs_A",
+    "Obs_R",
+    "Obs_C"
+  ],
+  "parameters": {
+    "alpha_R__FREE": {
+      "true": 0.01,
+      "low": 0.0001,
+      "high": 1.0,
+      "identifiable": true,
+      "note": "basal transcription of the repressor gene, /h"
+    },
+    "beta_R__FREE": {
+      "true": 5.0,
+      "low": 0.05,
+      "high": 500.0,
+      "identifiable": true,
+      "note": "translation of the repressor transcript, /h"
+    },
+    "delta_R__FREE": {
+      "true": 0.2,
+      "low": 0.002,
+      "high": 20.0,
+      "identifiable": true,
+      "note": "degradation of free repressor, /h; the parameter the paper lowers to 0.05 to reach the regime where the deterministic system has a stable fixed point and only the stochastic one oscillates, so the search crosses that bifurcation"
+    },
+    "gamma_C__FREE": {
+      "true": 2.0,
+      "low": 0.02,
+      "high": 200.0,
+      "identifiable": true,
+      "note": "sequestration of the activator by the repressor, /(molecule*h)"
+    }
+  },
+  "data": {
+    "file": "ssa.exp",
+    "replicates": 200,
+    "seed_offset": 1000000,
+    "sd_floor_fraction": 0.05
+  },
+  "fit": {
+    "budget_simulations": 20000,
+    "smoothing": 10
+  },
+  "notes": "The collection's noise-resistant oscillator, the complement of McKane_PhysRevLett2005: there a limit cycle exists only because of demographic noise, here a deterministic limit cycle survives molecular noise essentially undegraded. Two things make it hard. Replicate means of an oscillator decay toward a constant as trajectories dephase, so the later cycles in the 100 h window carry period jitter rather than amplitude, and the data's _SD columns grow with time accordingly. And delta_R is free over a range that contains the paper's Fig. 5 value of 0.05 /h, at which the deterministic system relaxes to a stable fixed point instead of cycling, so the objective landscape contains a Hopf bifurcation the search has to cross."
+}

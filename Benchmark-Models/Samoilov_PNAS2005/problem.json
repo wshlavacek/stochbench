@@ -1,0 +1,92 @@
+{
+  "id": "Samoilov_PNAS2005",
+  "version": 1,
+  "title": "Noise-induced bistability in an enzymatic futile cycle (Samoilov et al., 2005)",
+  "reference": "Samoilov M, Plyasunov S, Arkin AP (2005). Stochastic amplification and signaling in enzymatic futile cycles through noise-induced bistability with oscillations. Proc Natl Acad Sci USA 102:2310-2315. doi:10.1073/pnas.0406841102",
+  "source": "BNGL-Models/models/noise_induced_bistable_futile_cycle_samoilov2005 (rev f29cc7c)",
+  "model": "model.bngl",
+  "simulation": {
+    "method": "ssa",
+    "suffix": "ssa",
+    "t_start": 0,
+    "t_end": 0.5,
+    "n_steps": 250
+  },
+  "observables": [
+    "Obs_X",
+    "Obs_X_star",
+    "Obs_C_plus",
+    "Obs_C_minus",
+    "Obs_E_plus_tot",
+    "Obs_N"
+  ],
+  "parameters": {
+    "k_plus_1__FREE": {
+      "true": 40.0,
+      "low": 0.4,
+      "high": 4000.0,
+      "identifiable": true,
+      "note": "E+ binding the unmodified substrate, /(molecule*s)"
+    },
+    "k_plus_2__FREE": {
+      "true": 10000.0,
+      "low": 100.0,
+      "high": 1000000.0,
+      "identifiable": true,
+      "note": "E+ unbinding, /s"
+    },
+    "k_plus_3__FREE": {
+      "true": 10000.0,
+      "low": 100.0,
+      "high": 1000000.0,
+      "identifiable": true,
+      "note": "forward catalysis, /s"
+    },
+    "k_minus_1__FREE": {
+      "true": 200.0,
+      "low": 2.0,
+      "high": 20000.0,
+      "identifiable": true,
+      "note": "E- binding the modified substrate, /(molecule*s)"
+    },
+    "k_minus_2__FREE": {
+      "true": 100.0,
+      "low": 1.0,
+      "high": 10000.0,
+      "identifiable": false,
+      "note": "E- unbinding, /s. not identifiable: measured leverage 0 and -1 sigma at half and double. The reverse complex almost always proceeds to catalysis rather than unbinding (k_minus_3 = 5000 /s against k_minus_2 = 100 /s), so this constant is a two percent correction to the branch's Michaelis constant and the data do not see it. Reported by a fit but never scored."
+    },
+    "k_minus_3__FREE": {
+      "true": 5000.0,
+      "low": 50.0,
+      "high": 500000.0,
+      "identifiable": true,
+      "note": "reverse catalysis, /s"
+    },
+    "k_21__FREE": {
+      "true": 10.0,
+      "low": 0.1,
+      "high": 1000.0,
+      "identifiable": true,
+      "note": "quadratic driver step N + N -> E+ + N, /(molecule*s); the step that makes the driver noise close to multiplicative"
+    },
+    "k_22__FREE": {
+      "true": 10.0,
+      "low": 0.1,
+      "high": 1000.0,
+      "identifiable": true,
+      "note": "linear driver step N -> E+, /s"
+    }
+  },
+  "data": {
+    "file": "ssa.exp",
+    "replicates": 200,
+    "seed_offset": 1000000,
+    "sd_floor_fraction": 0.05
+  },
+  "fit": {
+    "budget_simulations": 20000,
+    "smoothing": 10
+  },
+  "notes": "Eight free parameters, the most in the collection, and the reason for including it: the current problems have three to six. The difficulty is not only dimension. Within each enzyme branch the unbinding and catalysis constants enter the slow dynamics mostly through the Michaelis constant (k2 + k3)/k1, so two of the three directions per branch are narrow, and the driver constants k_21 and k_22 are visible only through the shape of the total-forward-enzyme trace. Both complexes are observed, which is what keeps the individual constants separable at all; the leverage rows in PROTOCOL.md say how well. The window is short in absolute terms (0.5 s) because the published rate constants reach 1e4 /s: the substrate relaxes from its initial 2,000 modified molecules to its stationary level within 0.25 s, so a longer window would spend most of its sampling grid on a flat mean. Half the grid resolves that relaxation at 2 ms and half sits on the stationary level, where the six observables together pin the cycle constants."
+}

@@ -21,11 +21,19 @@ ROOT = protocol.problems_root().parent
 #: is never reused and never renamed. Every id ever published is listed here, so a rename
 #: or a deletion fails the test suite rather than silently invalidating published results.
 PERMANENT_IDS = {
+    'Artyomov_PNAS2010',
+    'Cortes_BiophysJ2017',
+    'Dembo_JImmunol1978',
+    'Faeder_JImmunol2003',
     'Hlavacek_PNAS2001',
     'Lin_PhysRevE2016',
     'McKane_PhysRevLett2005',
     'Munsky_Science2012',
+    'Posner_MathBiosci1995',
+    'Rubenstein_BiophysChem2007',
+    'Samoilov_PNAS2005',
     'Shahrezaei_PNAS2008',
+    'Vilar_PNAS2002',
     'Yang_PhysRevE2008',
 }
 

@@ -1,0 +1,55 @@
+{
+  "id": "Dembo_JImmunol1978",
+  "version": 1,
+  "title": "Bivalent ligand crosslinking bivalent receptors (Dembo and Goldstein, 1978)",
+  "reference": "Dembo M, Goldstein B (1978). Theory of equilibrium binding of symmetric bivalent haptens to cell surface antibody: application to histamine release from basophils. J Immunol 121:345-353. doi:10.4049/jimmunol.121.1.345",
+  "source": "BNGL-Models/models/blbr_dembo1978 (rev f29cc7c)",
+  "model": "model.bngl",
+  "simulation": {
+    "method": "nf",
+    "suffix": "nfr",
+    "t_start": 0,
+    "t_end": 500,
+    "n_steps": 50
+  },
+  "observables": [
+    "Obs_Free_L",
+    "Obs_Free_R",
+    "Obs_Bonds",
+    "Obs_Free_R_sites"
+  ],
+  "parameters": {
+    "koff__FREE": {
+      "true": 0.01,
+      "low": 0.0001,
+      "high": 1.0,
+      "identifiable": true,
+      "note": "bond dissociation, /s, common to both bond types"
+    },
+    "kf__FREE": {
+      "true": 1.66054e-07,
+      "low": 1.66054e-09,
+      "high": 1.66054e-05,
+      "identifiable": true,
+      "note": "capture of a free ligand arm by a free receptor site, /(molecule*s)"
+    },
+    "kxf__FREE": {
+      "true": 1.66667e-05,
+      "low": 1.66667e-07,
+      "high": 0.00166667,
+      "identifiable": true,
+      "note": "crosslinking of a tethered ligand to a second receptor, /(molecule*s)"
+    }
+  },
+  "data": {
+    "file": "nfr.exp",
+    "replicates": 100,
+    "seed_offset": 1000000,
+    "sd_floor_fraction": 0.05
+  },
+  "fit": {
+    "budget_simulations": 2000,
+    "smoothing": 4
+  },
+  "notes": "A second aggregation problem alongside Yang_PhysRevE2008, deliberately in a different part of that family. The ligand here is bivalent, not trivalent, so aggregates are linear chains rather than branched trees; there are ten times as many receptors (3,000 against 300) and the crosslinking strength KxRT is 5 against Yang's 0.1, so the chains are long and most receptors are in aggregates at equilibrium rather than the few percent Yang reaches. The shared shape of the two problems is the point of having both: the rules are nearly the same and the answer is nearly as hard, which separates a method that exploits the aggregation kinetics from one that exploits a particular regime. The three constants are determined by different features -- kf and kxf by the equilibrium levels through kf*LT/koff and kxf*RT/koff, and koff by how fast that equilibrium is reached -- so a fit that gets the plateau right can still have all three wrong along the koff direction. The budget is 2,000, half what a cost screen of the simulator alone suggested was affordable, for two reasons that point the same way. The objective here is the quietest in the collection -- 0.33 plus or minus 0.08 at the truth, against tens with a spread of tens elsewhere -- and every parameter's leverage is in the hundreds or thousands, so this is a steep, clean landscape that does not need 4,000 evaluations to be found. And a network-free fit pays for rebuilding the simulator's input per parameter set, which the simulation count does not see: at 4,000 a PyBNF fit here ran about 55 minutes, past the half-hour a network-free problem is meant to cost, and at 2,000 it is about 27."
+}
