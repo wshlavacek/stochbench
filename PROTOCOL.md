@@ -82,6 +82,44 @@ not.
 again under revised identifiability flags without running anything). It imports nothing
 beyond the standard library.
 
+## Versioning
+
+A number reported against this collection today has to mean the same thing as a number
+reported against it in two years, so the collection is versioned and every result says which
+version it was scored against.
+
+* **Problem ids are permanent.** An id names one problem forever. It is never reused for a
+  different problem and never renamed.
+* **A problem never changes in place.** Its definition, its model and its data are frozen once
+  published. Anything that would change what a fit of it is scored on — a true value, a bound,
+  the sampling window, the observables, the budget, the data file — is a *new problem with a
+  new id*, not an edit. (Text that changes nothing a fit sees, a typo in `notes` or a clearer
+  `description`, is an ordinary edit.)
+* **Adding problems is a minor version.** The existing problems are untouched, so a result
+  reported against 0.1.0 still stands under 0.2.0; it just covers fewer problems than a result
+  reported against 0.2.0 does.
+* **Changing the scoring rules is a major version.** The rules above — the tolerances, what
+  counts as a simulation, which statistic is primary — are part of what a version pins, in this
+  file and in `protocol.py` together. A changed tolerance or cost rule is a major version even
+  though no problem directory moved, because it rescores every existing result.
+* **Removing or superseding a problem is a major version.** A problem found to be broken is
+  marked superseded in its `notes` and kept; it is not deleted, because results that cite it
+  exist.
+
+Two version numbers live alongside each other and mean different things. The **collection
+version** (`protocol.COLLECTION_VERSION`, the `version` in `CITATION.cff` and
+`src/python/pyproject.toml`, and the release tag, all equal) is the one above. The **definition
+format version** (the `version` field in each `problem.json`, `protocol.FORMAT_VERSION`, 1
+today) is the schema those files are written in; a field added to the schema bumps it, and
+`load_problem` refuses a file it does not recognize rather than guessing.
+
+Every fit record `protocol.score_fit` writes carries a `collection_version`. A runner that
+scored a checkout other than the one it imports passes the version it actually scored. A
+results file whose records do not agree on that field is reporting on two different
+collections and should be split.
+
+`docs/RELEASING.md` is the checklist for cutting a version and minting its DOI.
+
 ## What the data determine
 
 Whether the data determine a parameter is measured, not guessed: score the truth several

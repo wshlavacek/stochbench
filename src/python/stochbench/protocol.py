@@ -39,6 +39,17 @@ Scoring rules
   (problem, method) pair is run from several fit seeds and the success rate over those
   seeds is the primary statistic; the median error and the median simulations to
   success are reported next to it.
+
+Versioning
+----------
+
+A result is comparable with another only when both were scored against the same
+collection, so every record :func:`score_fit` writes carries the
+:data:`COLLECTION_VERSION` it was scored against. What a version means is the rule in
+``PROTOCOL.md``: problem ids are permanent and a problem's definition, model and data
+never change in place, so adding problems is a minor version and changing one (or
+changing a scoring rule here) is a major one. :data:`FORMAT_VERSION` is a separate,
+smaller thing: the version of the ``problem.json`` schema.
 """
 from __future__ import annotations
 
@@ -51,6 +62,13 @@ from pathlib import Path
 
 #: Version of the problem-definition format this module reads.
 FORMAT_VERSION = 1
+
+#: Version of the collection this checkout is: the problems under ``Benchmark-Models/``
+#: together with the scoring rules in this module. Every fit record is stamped with it.
+#: A literal rather than the installed distribution's metadata, so a checkout and an
+#: install of that checkout never disagree; ``tests/test_problems.py`` holds it equal to
+#: the version in ``src/python/pyproject.toml`` and ``CITATION.cff``.
+COLLECTION_VERSION = '0.1.0'
 
 #: Success tolerances in decades of log10 parameter error.
 TOL_LOOSE = math.log10(2.0)   # within a factor of two
@@ -229,10 +247,16 @@ def score_fit(problem: Problem, estimate, simulations, trace, **extra):
         parameter so a record can be scored again (:func:`rescore`) should a
         definition's identifiability flags be revised.
     :param extra: anything else worth keeping (method, seed, wall time, ...)
+
+    The record carries the :data:`COLLECTION_VERSION` it was scored against, so a
+    results file says which collection its numbers are numbers about. ``extra`` may
+    override it, which is what a runner does when it scored a checkout other than
+    this one.
     """
     errors = log10_errors(estimate, problem.truth)
     record = {
         'problem': problem.id,
+        'collection_version': COLLECTION_VERSION,
         'estimate': {k: estimate.get(k) for k in problem.names},
         'errors': errors,
         'simulations': int(simulations),

@@ -2,13 +2,17 @@ cff-version: 1.2.0
 message: If you use stochbench, please cite it as below. A publication describing the benchmark is in preparation.
 title: "stochbench: a benchmark set of stochastic models for testing fitting algorithms and simulators"
 type: dataset
-version: 0.1.0-dev
-date-released: 2026-09-11
+version: 0.1.0
+date-released: 2026-09-15
 repository-code: https://github.com/wshlavacek/stochbench
 license: BSD-3-Clause
 authors:
   - family-names: Hlavacek
     given-names: William S.
+    orcid: https://orcid.org/0000-0003-4383-8711
+# The concept DOI (always the newest release) goes here as `doi:`, and each release's own
+# version DOI under `identifiers:`, once the GitHub-Zenodo integration has minted them.
+# See docs/RELEASING.md.
 keywords:
   - stochastic simulation
   - rule-based modeling
